@@ -4,10 +4,14 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Skeleton } from '@/components/ui/skeleton';
 
-const Paperclip = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute -top-4 left-1/2 -translate-x-1/2 -rotate-12 w-10 h-10 text-gray-400 drop-shadow-md">
-        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.59a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-    </svg>
+const BoardImage = () => (
+    <Image 
+        src="/images/board.png" 
+        alt="Board Image" 
+        width={80} 
+        height={80} 
+        className="w-[429px] h-[560px] md:w-20 md:h-20"
+    />
 );
 
 interface UpcomingEvent {
@@ -51,11 +55,11 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
                 <Skeleton className="h-6 w-3/4" />
               </div>
             ) : upcomingEvent ? (
-              <div className="font-['Rock_Salt'] text-2xl text-foreground/80 leading-relaxed space-y-2">
-                  <p>{upcomingEvent.name}</p>
+              <div className="relative font-['Comic_Neue'] text-2xl shadow-[0_5px_10px_rgba(0,0,0,0.3)] text-foreground/80 leading-relaxed space-y-2 bg-[#FFF1D6] w-[900] -rotate-[5deg] top-[-40] md:top-[-140] md:left-[12] md:w-[552] rounded-[5]">
+                  <p className="md:pl-[50] text-bold">{upcomingEvent.name}</p>
               </div>
             ) : (
-              <div className="font-['Rock_Salt'] text-2xl text-foreground/80 leading-relaxed space-y-2">
+              <div className="font-['Comic_Neue'] text-2xl text-foreground/80 leading-relaxed space-y-2">
                 <p>No upcoming events scheduled.</p>
                 <p>Please check back soon!</p>
               </div>
@@ -95,6 +99,15 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
             </div> */}
           </motion.div>
         </div>
+      <motion.div 
+            className="relative flex flex-col items-center text-center md:pl-12"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <BoardImage />
+            </motion.div>
         <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center mt-12 md:hidden">
             made using loads of coffeee...
         </p>

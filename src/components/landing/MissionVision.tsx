@@ -34,7 +34,7 @@ const ChainImage = ({className}: ChainImageProps) => (
         alt="Chain Decoration"
         width={200}
         height={200}
-        className={`absolute w-7 h-[800] md:w-8 md:h-[660px] ${className}`}
+        className={`absolute w-7 h-[92%] md:w-8 md:h-[80%] ${className}`}
     />
 );
 
@@ -50,7 +50,7 @@ export default function MissionVision() {
     >
       <div className="class=relative text-center py-24 md:py-32 min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[#F7F3EA]">
 
-        <ChainImage className="md:left-[300] left-3" />
+        <ChainImage className="md:left-[20%] left-[5%]" />
         <ChainImage className="md:left-[800] right-2" />
 
         <div className="grid md:grid-cols-2 gap-16 md:gap-12 items-start max-w-5xl mx-auto">

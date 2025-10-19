@@ -20,6 +20,7 @@ export default {
         body: ['Kumbh Sans', 'sans-serif'],
         headline: ['Kumbh Sans', 'sans-serif'],
         sans: ['Nimbus Sans L', 'sans-serif'],
+        comic: ['Comic Neue', 'cursive'],
       },
       colors: {
         background: 'hsl(var(--background))',
