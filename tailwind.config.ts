@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         body: ['Kumbh Sans', 'sans-serif'],
         headline: ['Kumbh Sans', 'sans-serif'],
+        sans: ['Nimbus Sans L', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

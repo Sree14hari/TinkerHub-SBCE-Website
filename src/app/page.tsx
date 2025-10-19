@@ -57,9 +57,9 @@ export default async function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Marquee content={marqueeContent1} className="bg-black text-white -rotate-2" />
+        {/* <Marquee content={marqueeContent1} className="bg-black text-white -rotate-2" /> */}
         <MissionVision />
-        <Marquee content={marqueeContent2} className="bg-yellow-400 text-black rotate-2" />
+        {/* <Marquee content={marqueeContent2} className="bg-yellow-400 text-black rotate-2" /> */}
         <Events initialUpcomingEvent={upcomingEvent} />
       </main>
       <Footer />

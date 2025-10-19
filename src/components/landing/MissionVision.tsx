@@ -47,7 +47,7 @@ export default function MissionVision() {
               <MissionIcon />
               <h2 className="font-['Special_Elite'] text-4xl md:text-5xl font-bold tracking-wider">MISSION</h2>
             </div>
-            <p className="text-lg text-foreground/80 leading-relaxed">
+            <p className="font-sans text-lg text-foreground/80 leading-relaxed">
               By 2025, cultivate a thriving maker culture in Kerala to ignite creativity and equip 10,000 young makers with the skills to innovate and shape the future.
             </p>
           </motion.div>
@@ -59,12 +59,12 @@ export default function MissionVision() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             >
-            <div className="absolute left-0 top-0 bottom-0 w-px bg-foreground/20 hidden md:block"></div>
+            {/* <div className="absolute left-0 top-0 bottom-0 w-px bg-foreground/20 hidden md:block"></div> */}
             <div className="flex flex-col items-center gap-4 mb-6 md:flex-row">
               <VisionIcon />
               <h2 className="font-['Special_Elite'] text-4xl md:text-5xl font-bold tracking-wider">VISION</h2>
             </div>
-            <p className="text-lg text-foreground/80 leading-relaxed">
+            <p className="font-sans text-lg text-foreground/80 leading-relaxed">
               Everyone has access to the knowledge required to set the course for a better future
             </p>
           </motion.div>
