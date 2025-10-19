@@ -24,7 +24,7 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
   return (
     <motion.section
       id="events"
-      className="relative !py-12 md:!py-24 overflow-hidden"
+      className="relative !py-12 md:!py-24"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -39,8 +39,8 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="relative inline-block mb-8 md:-rotate-2">
-              <div className="bg-black text-background font-black text-3xl md:text-4xl inline-block px-8 py-2">
+            <div className="absolute -rotate-[5deg] top-[-120] w-[1000] overflow-hidden md:w-[550] whitespace-nowrap md:overflow-visible md:-rotate-[5deg] md:top-[-220] md:left-10 text-center">
+              <div className="bg-black text-background font-black text-[25px] px-8 py-4 md:text-4xl md:px-8 md:py-4">
                 UPCOMING EVENTS
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="relative w-[300px] h-[225px] md:w-[360px] md:h-[270px] bg-[#F0EAD6] p-4 border-2 border-black/10 shadow-[8px_8px_0px_#00000020] -rotate-3">
+            {/* <div className="relative w-[300px] h-[225px] md:w-[360px] md:h-[270px] bg-[#F0EAD6] p-4 border-2 border-black/10 shadow-[8px_8px_0px_#00000020] -rotate-3">
               <Paperclip />
               <div className="relative w-full h-full">
                 {loading ? (
@@ -92,7 +92,7 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
                   />
                 )}
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
         <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center mt-12 md:hidden">
