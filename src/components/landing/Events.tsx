@@ -69,7 +69,7 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="relative w-[300px] h-[225px] md:w-[360px] md:h-[270px] bg-[#F0EAD6] p-4 border-2 border-black/10 shadow-[8px_8px_0px_#00000020] -rotate-3">
+            {/* <div className="relative w-[300px] h-[225px] md:w-[360px] md:h-[270px] bg-[#F0EAD6] p-4 border-2 border-black/10 shadow-[8px_8px_0px_#00000020] -rotate-3">
               <Paperclip />
               <div className="relative w-full h-full">
                 {loading ? (
@@ -92,7 +92,7 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
                   />
                 )}
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
         <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center mt-12 md:hidden">
