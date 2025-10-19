@@ -10,7 +10,7 @@ const BoardImage = () => (
         alt="Board Image" 
         width={80} 
         height={80} 
-        className="w-[429px] h-[560px] md:w-20 md:h-20"
+        className="relative md:absolute right-[-50] w-[560px] h-[429px] md:w-[450px] md:h-[600px] md:right-[-300] md:top-[-510] "
     />
 );
 
@@ -106,9 +106,11 @@ export default function Events({ initialUpcomingEvent }: { initialUpcomingEvent:
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             >
+            {/* <div className="right-0"> */}
               <BoardImage />
+            {/* </div> */}
             </motion.div>
-        <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center mt-12 md:hidden">
+        <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center mt-12">
             made using loads of coffeee...
         </p>
       </div>
