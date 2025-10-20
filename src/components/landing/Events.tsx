@@ -6,11 +6,11 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 const BoardImage = () => (
     <Image 
-        src="/images/board.png" 
+        src="/images/board.svg" 
         alt="Board Image" 
         width={80} 
         height={80} 
-        className="relative md:absolute right-[-50] w-[560px] h-[429px] md:w-[450px] md:h-[600px] md:right-[-300] md:top-[-510] "
+        className="relative md:absolute right-[-50] top-[-150px] w-[450px] h-[400px] md:w-[650px] md:h-[800px] md:right-[-330] md:top-[-700px] -rotate-[15deg] "
     />
 );
 
@@ -48,12 +48,12 @@ export default function Events({ initialUpcomingEvents }: { initialUpcomingEvent
         <div className="md:grid md:grid-cols-2 md:gap-8 md:items-center">
           <motion.div
             className="text-center md:text-left flex flex-col items-center md:items-start"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -70 }}
+            whileInView={{ opacity: 1, x: -30 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="absolute -rotate-[5deg] top-[-120px] w-[1000px] overflow-hidden md:w-[550px] whitespace-nowrap md:overflow-visible md:-rotate-[5deg] md:top-[-220px] md:left-10 text-center">
+            <div className="relative md:absolute -rotate-[5deg] left-[30px] top-[-110px] w-[1000px] overflow-hidden md:w-[550px] whitespace-nowrap md:overflow-visible md:-rotate-[5deg] md:top-[-220px] md:left-10">
               <div className="bg-black text-background font-black text-[25px] px-8 py-4 md:text-4xl md:px-8 md:py-4">
                 UPCOMING EVENTS
               </div>
@@ -67,12 +67,12 @@ export default function Events({ initialUpcomingEvents }: { initialUpcomingEvent
             ) : upcomingEvents && upcomingEvents.length > 0 ? (
               <div className="space-y-4 mt-8 md:mt-0">
               {upcomingEvents.slice(0, 3).map((event) => (
-                <div key={event.id} className="relative font-['Comic_Neue'] text-2xl shadow-[0_5px_10px_rgba(0,0,0,0.3)] text-foreground/80 leading-relaxed space-y-2 bg-[#FFF1D6] w-[900px] -rotate-[5deg] top-[-40px] md:top-[-140px] md:left-[12px] md:w-[552px] md:h-[50px] md:pt-[5px] rounded-[5px]">
+                <div key={event.id} className="relative font-['Comic_Neue'] text-2xl shadow-[0_5px_10px_rgba(0,0,0,0.3)] text-foreground/80 leading-relaxed space-y-2 bg-[#FFF1D6] w-[900px] -rotate-[5deg] left-[40px] top-[-120px] md:top-[-140px] md:left-[45px] md:w-[552px] md:h-[50px] md:pt-[5px] rounded-[5px]">
                 <BulletPoint />
                 <p className="translate-y-[-14px] md:translate-y-[-26px] md:pl-[50] text-bold">{event.name}</p>
               </div>
             ))}
-            <p className="relative sr-only sm:not-sr-only font-['Rock_Salt'] -rotate-[5deg] translate-x-[30%] translate-y-[-100px]">More events are on the way...</p>
+            <p className="relative sr-only sm:not-sr-only font-['Rock_Salt'] -rotate-[5deg] translate-x-[40%] translate-y-[-150px]">More events are on the way...</p>
               </div>
             ) : (
               <div className="font-['Comic_Neue'] text-2xl text-foreground/80 leading-relaxed space-y-2">
