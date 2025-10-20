@@ -8,6 +8,7 @@ body {
 }
 
 /* Background texture */
+
 .crumpled-paper {
   background-image: url('/images/image.png');
   background-color: hsl(var(--background));

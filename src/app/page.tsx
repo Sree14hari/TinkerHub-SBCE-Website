@@ -53,7 +53,7 @@ const upcomingEvent = {
 
 export default async function Home() {
   return (
-    <div className="flex min-h-dvh flex-col crumpled-paper">
+    <div className="flex min-h-dvh flex-col">
       <Header />
       <main className="flex-1">
         <Hero />
