@@ -45,11 +45,20 @@ const marqueeContent2 = [
 ];
 
 // Mock data to replace Supabase fetch
-const upcomingEvent = {
+const upcomingEvent = [{
     id: 1,
-    name: 'Mega Hackathon',
+    name: 'Event 1',
     image: 'https://picsum.photos/seed/upcoming/360/270'
-};
+},{
+    id: 2,
+    name: 'Event 2',
+    image: 'https://picsum.photos/seed/upcoming2/360/270'
+},
+{
+    id: 3,
+    name: 'Event 3',
+    image: 'https://picsum.photos/seed/upcoming3/360/270'
+}];
 
 export default async function Home() {
   return (
@@ -60,7 +69,7 @@ export default async function Home() {
         <Marquee content={marqueeContent1} className="bg-black text-white -rotate-2" />
         <MissionVision />
         {/* <Marquee content={marqueeContent2} className="bg-yellow-400 text-black rotate-2" /> */}
-        <Events initialUpcomingEvent={upcomingEvent} />
+        <Events initialUpcomingEvents={upcomingEvent} />
       </main>
       {/* <Footer /> */}
     </div>
