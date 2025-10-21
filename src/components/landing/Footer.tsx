@@ -13,7 +13,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <motion.footer 
-      className="w-full bg-black"
+      className="w-full"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -28,13 +28,13 @@ export default function Footer() {
               transition={{ type: 'spring', stiffness: 300 }}
             >
               <Link href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
-                <social.icon className="w-8 h-8 text-white/70 hover:text-white transition-colors" />
+                <social.icon className="w-8 h-8 text-foreground/70 hover:text-foreground transition-colors" />
               </Link>
             </motion.div>
           ))}
         </div>
-        <div className="w-24 h-px bg-white/20 mx-auto mb-4"></div>
-        <p className="font-['Rock_Salt'] text-sm text-white/70">
+        <div className="w-24 h-px bg-foreground/20 mx-auto mb-4"></div>
+        <p className="font-['Rock_Salt'] text-sm text-foreground/70">
             made using loads of coffeee...
         </p>
       </div>
