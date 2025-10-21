@@ -33,7 +33,7 @@ export default function MissionVision() {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="relative text-center py-24 md:py-32 flex flex-col items-center justify-center overflow-hidden bg-[#F7F3EA]">
+      <div className="relative text-center py-24 md:py-32 flex flex-col items-center justify-center overflow-hidden">
         <div className="relative z-10">
           <div className="grid md:grid-cols-2 gap-16 md:gap-12 items-start max-w-5xl mx-auto">
             <motion.div 
