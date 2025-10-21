@@ -2,13 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import UpcomingEvents from './UpcomingEvents';
-import Placard from './Placard';
-
-
-type ChainImageProps = {
-    className?: string;
-};
 
 const MissionIcon = () => (
     <Image 
@@ -30,16 +23,6 @@ const VisionIcon = () => (
     />
 );
 
-const ChainImage = ({className}: ChainImageProps) => (
-    <Image
-        src="/images/chain.png"
-        alt="Chain Decoration"
-        width={200}
-        height={200}
-        className={`absolute w-7 h-[92%] md:w-8 md:h-[80%] ${className}`}
-    />
-);
-
 export default function MissionVision() {
   return (
     <motion.section 
@@ -51,11 +34,7 @@ export default function MissionVision() {
       transition={{ duration: 0.8 }}
     >
       <div className="relative text-center py-24 md:py-32 flex flex-col items-center justify-center overflow-hidden bg-[#F7F3EA]">
-
         <div className="relative z-10">
-          <ChainImage className="md:left-[20%] left-[2%]" />
-          <ChainImage className="md:right-[20%] right-[1%]" />
-
           <div className="grid md:grid-cols-2 gap-16 md:gap-12 items-start max-w-5xl mx-auto">
             <motion.div 
               className="flex flex-col items-center text-center"
@@ -94,13 +73,6 @@ export default function MissionVision() {
             </motion.div>
           </div>
         </div>
-
-        <div className="absolute top-[85%] md:top-[90%] w-full max-w-xl md:max-w-2xl lg:max-w-4xl px-4 md:px-0">
-            <UpcomingEvents />
-        </div>
-        
-        <Placard />
-
         <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center absolute bottom-8">
             made using loads of coffeee...
         </p>
