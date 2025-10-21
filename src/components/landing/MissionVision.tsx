@@ -25,16 +25,6 @@ const VisionIcon = () => (
 	/>
 )
 
-const ChainImage = ({ className }: { className?: string }) => (
-	<Image
-		src='/images/chain.png'
-		alt='Chain Decoration'
-		width={200}
-		height={400}
-		className={`absolute top-0 w-8 h-full z-0 select-none pointer-events-none ${className}`}
-	/>
-)
-
 const Placard = () => (
 	<motion.div
 		className='hidden md:block absolute bottom-0 right-0 w-80 h-96'
@@ -90,8 +80,6 @@ export default function MissionVision() {
 							creativity and equip 10,000 young makers with the skills to
 							innovate and shape the future.
 						</p>
-						<ChainImage className='left-[6%]' />
-						<ChainImage className='right-[6%]' />
 					</motion.div>
 
 					{/* Vision Column */}
@@ -152,10 +140,29 @@ export default function MissionVision() {
 						</p>
 					</motion.div>
 				</div>
+				
+				{/* Chains and Events Board */}
+				<div className="absolute w-full h-full top-0 left-0">
+					{/* Left Chain */}
+					<div className="absolute top-[280px] left-[calc(25%-150px)] w-[80px] h-[150px] hidden md:block">
+						<Image src="/images/chain.png" alt="chain" layout="fill" className="object-contain" />
+					</div>
+					<div className="absolute top-[280px] left-[calc(25%+70px)] w-[80px] h-[150px] hidden md:block">
+						<Image src="/images/chain.png" alt="chain" layout="fill" className="object-contain" />
+					</div>
+
+					{/* Right Chain */}
+					<div className="absolute top-[280px] left-[calc(75%-150px)] w-[80px] h-[150px] hidden md:block">
+						<Image src="/images/chain.png" alt="chain" layout="fill" className="object-contain" />
+					</div>
+					<div className="absolute top-[280px] left-[calc(75%+70px)] w-[80px] h-[150px] hidden md:block">
+						<Image src="/images/chain.png" alt="chain" layout="fill" className="object-contain" />
+					</div>
+				</div>
 
 				{/* Events Board - Shared between layouts */}
 				<motion.div
-					className='relative mt-16 md:absolute md:mt-0 md:top-[60%] md:left-1/2 md:-translate-x-1/2 md:w-[45%]'
+					className='relative mt-16 md:absolute md:mt-0 md:top-[400px] md:left-1/2 md:-translate-x-1/2 md:w-[45%]'
 					initial={{ opacity: 0, y: 50, scale: 0.9 }}
 					whileInView={{ opacity: 1, y: 0, scale: 1 }}
 					transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
