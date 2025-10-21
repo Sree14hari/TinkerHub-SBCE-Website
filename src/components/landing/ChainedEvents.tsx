@@ -11,19 +11,13 @@ const eventItems = [
   { icon: Users, text: "Find your Flock" },
 ];
 
-const Chain = ({ className }: { className?: string }) => (
-  <div className={cn("absolute top-0 w-8 h-full z-10", className)}>
-    <Image src="/images/chain.png" alt="chain" layout="fill" objectFit="contain" objectPosition="top" />
-  </div>
-);
-
 export default function ChainedEvents() {
   return (
     <section className="relative w-full bg-[#F7F3EA] pt-12 md:pt-20 pb-24 md:pb-32 -mt-1 overflow-hidden">
       <div className="container relative">
 
         {/* Chains for desktop */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-12 md:h-20 hidden md:flex justify-between">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-12 md:h-20 hidden md:flex justify-between px-16">
             <div className="relative h-full w-8">
                 <Image src="/images/chain.png" layout="fill" objectFit="contain" alt="chain" />
             </div>
