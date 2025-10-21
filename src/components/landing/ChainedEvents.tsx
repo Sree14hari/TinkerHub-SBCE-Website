@@ -80,7 +80,7 @@ export default function ChainedEvents() {
 
            {/* Placard Image - moved to the right */}
           <motion.div
-            className="hidden lg:block relative w-72 h-72 mt-16 self-end"
+            className="hidden lg:block relative w-96 h-96 mt-16 self-end"
             initial={{ opacity: 0, x: 100, rotate: 15 }}
             whileInView={{ opacity: 1, x: 0, rotate: 5 }}
             viewport={{ once: true }}
