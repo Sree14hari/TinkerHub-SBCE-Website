@@ -37,10 +37,10 @@ export default function ChainedEvents() {
               transition={{ duration: 0.8 }}
           >
               {/* Chains */}
-              <div className="absolute top-0 left-[15%] md:left-[20%] w-8 h-24 md:h-32 -translate-y-full">
+              <div className="absolute top-0 left-[15%] md:left-[-10%] w-8 h-24 md:h-32 -translate-y-full">
                   <Image src="/images/chain.png" layout="fill" objectFit="contain" alt="chain" className="transform -rotate-6"/>
               </div>
-              <div className="absolute top-0 right-[15%] md:right-[20%] w-8 h-24 md:h-32 -translate-y-full">
+              <div className="absolute top-0 right-[15%] md:right-[40%] w-8 h-24 md:h-32 -translate-y-full">
                   <Image src="/images/chain.png" layout="fill" objectFit="contain" alt="chain" className="transform rotate-6"/>
               </div>
 
