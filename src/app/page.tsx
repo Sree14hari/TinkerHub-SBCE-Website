@@ -25,6 +25,26 @@ const marqueeContent1 = [
 
 ];
 
+const marqueeContent2 = [
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
+];
+
+
 export default async function Home() {
   return (
     <div className="flex min-h-dvh flex-col">
@@ -33,6 +53,7 @@ export default async function Home() {
         <Hero />
         <Marquee content={marqueeContent1} className="bg-black text-white -rotate-2" />
         <MissionVision />
+        <Marquee content={marqueeContent2} className="bg-primary text-primary-foreground rotate-2" />
         <ChainedEvents />
       </main>
       {/* <Footer /> */}
