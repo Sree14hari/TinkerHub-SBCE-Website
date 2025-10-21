@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Github, Linkedin } from 'lucide-react';
+import { useState } from 'react';
 
 const socialLinks = [
   { name: 'GitHub', icon: Github, url: 'https://github.com/Tinkerhub-SBCE' },
@@ -11,6 +12,8 @@ const socialLinks = [
 
 
 export default function Footer() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <motion.footer 
       className="w-full"
@@ -34,9 +37,20 @@ export default function Footer() {
           ))}
         </div>
         <div className="w-24 h-px bg-foreground/20 mx-auto mb-4"></div>
-        <p className="font-['Rock_Salt'] text-sm text-foreground/70">
+        <div 
+          className="relative group cursor-pointer"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <p className="font-['Rock_Salt'] text-sm text-foreground/70 pb-4 transition-opacity duration-300 group-hover:opacity-0">
             made using loads of coffeee...
-        </p>
+          </p>
+          <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+            <p className="font-['Rock_Salt'] text-sm text-foreground/80">
+              Looking for footer? It’s 2025.
+            </p>
+          </div>
+        </div>
       </div>
     </motion.footer>
   ); 
