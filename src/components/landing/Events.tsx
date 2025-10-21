@@ -6,7 +6,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 const BoardImage = () => (
     <Image 
-        src="/images/board.png" 
+        src="/images/event_board.svg" 
         alt="Board Image" 
         width={80} 
         height={80} 
