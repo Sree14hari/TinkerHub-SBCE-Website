@@ -26,21 +26,20 @@ export default function ChainedEvents() {
   return (
     <section className="relative w-full pb-32 md:pb-48 -mt-1 overflow-hidden">
       <div className="container relative">
-        <div className="flex flex-col lg:flex-row justify-center items-start gap-16 lg:gap-24 relative pt-16 md:pt-24">
+        <div className="flex flex-col justify-center items-center relative pt-24">
           
-          {/* Main content block - moved to the left */}
           <motion.div
-              className="relative w-full max-w-lg lg:max-w-md"
+              className="relative w-full max-w-lg"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8 }}
           >
               {/* Chains */}
-              <div className="absolute top-0 left-[15%] md:left-[-10%] w-8 h-24 md:h-32 -translate-y-full">
+              <div className="absolute top-0 left-[15%] md:left-[22%] w-8 h-24 md:h-32 -translate-y-full">
                   <Image src="/images/chain.png" layout="fill" objectFit="contain" alt="chain" className="transform -rotate-6"/>
               </div>
-              <div className="absolute top-0 right-[15%] md:right-[40%] w-8 h-24 md:h-32 -translate-y-full">
+              <div className="absolute top-0 right-[15%] md:right-[22%] w-8 h-24 md:h-32 -translate-y-full">
                   <Image src="/images/chain.png" layout="fill" objectFit="contain" alt="chain" className="transform rotate-6"/>
               </div>
 
@@ -76,17 +75,6 @@ export default function ChainedEvents() {
               <p className="font-['Rock_Salt'] text-lg text-foreground/80 text-center mt-8">
                   More events are on the way....
               </p>
-          </motion.div>
-
-           {/* Placard Image - moved to the right */}
-          <motion.div
-            className="hidden lg:block relative w-96 h-96 mt-16 self-end"
-            initial={{ opacity: 0, x: 100, rotate: 15 }}
-            whileInView={{ opacity: 1, x: 0, rotate: 5 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          >
-            <Image src="/images/board.svg" layout="fill" objectFit="contain" alt="Placard"/>
           </motion.div>
         </div>
         

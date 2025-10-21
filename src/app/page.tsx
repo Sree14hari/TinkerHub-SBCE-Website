@@ -3,7 +3,7 @@ import Hero from '@/components/landing/Hero';
 import Marquee from '@/components/landing/Marquee';
 import MissionVision from '@/components/landing/MissionVision';
 import ChainedEvents from '@/components/landing/ChainedEvents';
-// import Footer from '@/components/landing/Footer';
+import Footer from '@/components/landing/Footer';
 
 const marqueeContent1 = [
   "don't fly solo",
@@ -56,7 +56,7 @@ export default async function Home() {
         <Marquee content={marqueeContent2} className="bg-primary text-primary-foreground rotate-2" />
         <ChainedEvents />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
