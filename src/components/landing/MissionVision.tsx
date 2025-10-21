@@ -34,7 +34,10 @@ const ChainImage = ({className}: ChainImageProps) => (
         alt="Chain Decoration"
         width={200}
         height={200}
-        className={`absolute w-7 h-[92%] md:w-8 md:h-[80%] ${className}`}
+        className={cn(
+            "absolute h-[80%] w-8 hidden md:block",
+            className
+        )}
     />
 );
 
@@ -48,10 +51,10 @@ export default function MissionVision() {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="class=relative text-center py-24 md:py-32 min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[#F7F3EA]">
+      <div className="relative text-center py-24 md:py-32 min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[#F7F3EA]">
 
-        <ChainImage className="md:left-[20%] left-[2%]" />
-        <ChainImage className="md:left-[800] right-[1%]" />
+        <ChainImage className="left-[20%]" />
+        <ChainImage className="right-[20%]" />
 
         <div className="grid md:grid-cols-2 gap-16 md:gap-12 items-start max-w-5xl mx-auto">
           <motion.div 
