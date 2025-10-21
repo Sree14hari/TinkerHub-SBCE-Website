@@ -85,8 +85,9 @@ export default function MissionVision() {
 						transition={{ duration: 0.8, delay: 0.2 }}>
 						<div className='flex flex-col items-center gap-4 mb-6 md:flex-row'>
 							<MissionIcon />
-							<h2 className="font-['Special_Elite'] text-4xl md:text-5xl font-bold tracking-wider">
+							<h2 className="font-['Special_Elite'] text-4xl md:text-5xl font-bold tracking-wider relative">
 								MISSION
+								<ChainImage className='-bottom-44 left-1/2 -translate-x-1/2' />
 							</h2>
 						</div>
 						<div className='max-w-md'>
@@ -107,8 +108,9 @@ export default function MissionVision() {
 						transition={{ duration: 0.8, delay: 0.4 }}>
 						<div className='flex flex-col items-center gap-4 mb-6 md:flex-row'>
 							<VisionIcon />
-							<h2 className="font-['Special_Elite'] text-4xl md:text-5xl font-bold tracking-wider">
+							<h2 className="font-['Special_Elite'] text-4xl md:text-5xl font-bold tracking-wider relative">
 								VISION
+								<ChainImage className='-bottom-44 left-1/2 -translate-x-1/2' />
 							</h2>
 						</div>
 						<div className='max-w-md'>
@@ -120,65 +122,55 @@ export default function MissionVision() {
 					</motion.div>
 				</div>
 
-				{/* CHAINS AND EVENTS BOARD */}
-				<div className='absolute top-0 left-0 right-0 h-full flex justify-center pointer-events-none'>
-					<div className='relative w-full max-w-6xl h-full'>
-						<ChainImage className='left-[22%] hidden md:block' />
-						<ChainImage className='right-[22%] hidden md:block' />
-
-						<motion.div
-							className='absolute top-[280px] left-1/2 -translate-x-1/2 w-[90%] max-w-2xl pointer-events-auto'
+				<div className="mt-24 md:mt-40 max-w-2xl mx-auto relative z-10">
+					<motion.div
+							className='relative'
 							initial={{ opacity: 0, y: -20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ duration: 0.8, delay: 0.6, type: "spring" }}>
-							<div className='relative'>
-								<div className='bg-black text-background font-black text-2xl md:text-4xl px-8 py-4 text-center -rotate-2 shadow-[4px_4px_10px_rgba(0,0,0,0.3)]'>
-									UPCOMING EVENTS
-								</div>
-							</div>
-							<div className='mt-4 space-y-3'>
-								{upcomingEvents.map((event) => (
-									<div
-										key={event.id}
-										className='flex items-center justify-between bg-[#FFF1D6] p-3 rounded-lg shadow-[0_5px_10px_rgba(0,0,0,0.2)] text-foreground/90 font-bold'>
-										<div className='flex items-center gap-3'>
-											<BulletPoint iconSrc={event.icon} />
-											<span className="font-['Comic_Neue'] text-lg">
-												{event.name}
-											</span>
-										</div>
-										<ArrowIcon />
+						<div className='bg-black text-background font-black text-2xl md:text-4xl px-8 py-4 text-center -rotate-2 shadow-[4px_4px_10px_rgba(0,0,0,0.3)]'>
+							UPCOMING EVENTS
+						</div>
+						<div className='mt-4 space-y-3'>
+							{upcomingEvents.map((event) => (
+								<div
+									key={event.id}
+									className='flex items-center justify-between bg-[#FFF1D6] p-3 rounded-lg shadow-[0_5px_10px_rgba(0,0,0,0.2)] text-foreground/90 font-bold'>
+									<div className='flex items-center gap-3'>
+										<BulletPoint iconSrc={event.icon} />
+										<span className="font-['Comic_Neue'] text-lg">
+											{event.name}
+										</span>
 									</div>
-								))}
-							</div>
-							<p className="font-['Rock_Salt'] text-center text-sm text-foreground/70 mt-4">
-								More events are on the way....
-							</p>
-						</motion.div>
-					</div>
+									<ArrowIcon />
+								</div>
+							))}
+						</div>
+						<p className="font-['Rock_Salt'] text-center text-sm text-foreground/70 mt-4">
+							More events are on the way....
+						</p>
+					</motion.div>
+
+					<motion.div
+						className="absolute bottom-[-100px] md:bottom-[-200px] right-[-100px] md:right-[-250px] w-[250px] h-[300px] md:w-[450px] md:h-[500px] z-20"
+						initial={{ opacity: 0, y: 100 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 1.0, delay: 0.5 }}
+					>
+						<Image
+							src="/images/board.svg"
+							alt="Hand holding a placard"
+							fill
+							style={{ objectFit: 'contain' }}
+						/>
+					</motion.div>
 				</div>
-
-        {/* PLACARD IMAGE */}
-        <motion.div
-          className="absolute bottom-[-10%] md:bottom-0 right-0 md:right-[5%] w-[250px] h-[300px] md:w-[450px] md:h-[500px] z-20"
-           initial={{ opacity: 0, y: 100 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ duration: 1.0, delay: 0.5 }}
-        >
-          <Image 
-            src="/images/board.svg"
-            alt="Hand holding a placard"
-            fill
-            style={{ objectFit: 'contain' }}
-          />
-        </motion.div>
-
-        <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center mt-96 md:mt-80">
-          made using loads of coffeee...
-        </p>
-
+				
+				<p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center mt-12 md:mt-24">
+					made using loads of coffeee...
+				</p>
 			</div>
 		</motion.section>
 	)
