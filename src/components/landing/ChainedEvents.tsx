@@ -26,7 +26,7 @@ export default function ChainedEvents() {
   return (
     <section className="relative w-full pb-32 md:pb-48 -mt-1 overflow-hidden">
       <div className="container relative">
-        <div className="flex flex-col lg:flex-row justify-center items-start gap-16 lg:gap-24 relative pt-24 md:pt-32">
+        <div className="flex flex-col lg:flex-row justify-center items-start gap-16 lg:gap-24 relative pt-16 md:pt-24">
           
           {/* Main content block - moved to the left */}
           <motion.div
