@@ -118,11 +118,11 @@ export default function MissionVision() {
 						<div className='absolute top-full w-full flex justify-center mt-8'>
 							<div className='relative w-[90%] max-w-4xl'>
 								{/* Left Chain */}
-								<div className='absolute bottom-full left-[15%] h-[100px] w-16 z-0'>
+								<div className='absolute bottom-full left-[25%] -translate-x-1/2 h-[100px] w-16 z-0'>
 									<Image src="/images/chain.png" alt="chain" layout="fill" objectFit="contain" objectPosition="bottom" />
 								</div>
 								{/* Right Chain */}
-								<div className='absolute bottom-full right-[15%] h-[100px] w-16 z-0'>
+								<div className='absolute bottom-full right-[25%] translate-x-1/2 h-[100px] w-16 z-0'>
 									<Image src="/images/chain.png" alt="chain" layout="fill" objectFit="contain" objectPosition="bottom" />
 								</div>
 
@@ -239,7 +239,7 @@ export default function MissionVision() {
 				</div>
 
 				<motion.div
-					className="hidden md:block absolute top-[400px] right-[-100px] w-[450px] h-[500px] z-20"
+					className="hidden md:block absolute top-[400px] right-[-100px] w-[450px] h-[500px] z-0"
 					initial={{ opacity: 0, y: 100 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
@@ -260,5 +260,3 @@ export default function MissionVision() {
 		</motion.section>
 	)
 }
-
-    
