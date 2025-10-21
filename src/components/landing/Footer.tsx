@@ -34,7 +34,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="w-24 h-px bg-white/20 mx-auto mb-4"></div>
-        <p className="font-['Rock_Salt'] text-sm text-white/70 hidden md:block">
+        <p className="font-['Rock_Salt'] text-sm text-white/70">
             made using loads of coffeee...
         </p>
       </div>

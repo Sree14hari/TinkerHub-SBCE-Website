@@ -89,14 +89,11 @@ export default function ChainedEvents() {
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
               >
-                  <Image src="/images/placard.png" alt="Placard" fill style={{objectFit: 'contain'}} />
+                  <Image src="/images/board.svg" alt="Placard" fill style={{objectFit: 'contain'}} />
               </motion.div>
             </div>
         </div>
         
-        <p className="font-['Rock_Salt'] text-sm text-foreground/70 text-center absolute bottom-8 left-1/2 -translate-x-1/2 w-full">
-            made using loads of coffeee...
-        </p>
       </div>
     </section>
   );
