@@ -6,9 +6,7 @@ import Link from "next/link"
 
 export default async function ResourceHub() {
 	return (
-		<div className='flex min-h-dvh flex-col '>
-			<Header />
-
+		<div>
 			<div>
 				<div className='mx-auto max-w-6xl px-6 mt-[25px]'>
 					<TiltBanner
@@ -26,10 +24,10 @@ export default async function ResourceHub() {
 				</div>
 				<div className='min-h-[63.4vh] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-8 px-4'>
 					<div className='w-full lg:w-auto flex justify-center'>
-						<Link href='/resourceHub/concepts'>
+						<Link href='/resourceHub/domain'>
 							<CollageCard
 								title='Concepts'
-								description='Explore curated docs, templates, and tools across AI, web, and systems — all in one place.'
+								description='The concept explains the main idea or theme behind the learning topic — what it is about and why it matters.'
 								handDirection='left'
 								width={400}
 								height={415}
@@ -37,10 +35,10 @@ export default async function ResourceHub() {
 						</Link>
 					</div>
 					<div className='w-full lg:w-auto flex justify-center lg:justify-start'>
-						<Link href='/resourceHub/courses'>
+						<Link href='/resourceHub/domain'>
 							<CollageCard
 								title='Courses'
-								description='Explore curated docs, templates, and tools across AI, web, and systems — all in one place.'
+								description='The content is the actual learning material — the information, lessons, videos, or activities that help learners understand the concept.'
 								handDirection='right'
 								handSrc='/images/resource_hub/resource_hub_right_animation.svg'
 								width={400}
@@ -50,7 +48,6 @@ export default async function ResourceHub() {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	)
 }
