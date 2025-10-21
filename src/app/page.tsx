@@ -2,8 +2,8 @@ import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
 import Marquee from '@/components/landing/Marquee';
 import MissionVision from '@/components/landing/MissionVision';
-import Events from '@/components/landing/Events';
-// import Footer from '@/components/landing/Footer';
+import ChainedEvents from '@/components/landing/ChainedEvents';
+import Footer from '@/components/landing/Footer';
 
 const marqueeContent1 = [
   "don't fly solo",
@@ -26,39 +26,24 @@ const marqueeContent1 = [
 ];
 
 const marqueeContent2 = [
-  "tinkerhub",
-  "a decade of impact",
-  "tinkerhub",
-  "a decade of impact",
-  "tinkerhub",
-  "a decade of impact",
-  "tinkerhub",
-  "a decade of impact",
-  "tinkerhub",
-  "a decade of impact",
-  "tinkerhub",
-  "a decade of impact",
-  "tinkerhub",
-  "a decade of impact",
-  "tinkerhub",
-  "a decade of impact",
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
+  "INNOVATE",
+  "COLLABORATE",
+  "CREATE",
+  "LEARN",
 ];
 
-// Mock data to replace Supabase fetch
-const upcomingEvent = [{
-    id: 1,
-    name: 'Event 1',
-    image: 'https://picsum.photos/seed/upcoming/360/270'
-},{
-    id: 2,
-    name: 'Event 2',
-    image: 'https://picsum.photos/seed/upcoming2/360/270'
-},
-{
-    id: 3,
-    name: 'Event 3',
-    image: 'https://picsum.photos/seed/upcoming3/360/270'
-}];
 
 export default async function Home() {
   return (
@@ -68,10 +53,10 @@ export default async function Home() {
         <Hero />
         <Marquee content={marqueeContent1} className="bg-black text-white -rotate-2" />
         <MissionVision />
-        {/* <Marquee content={marqueeContent2} className="bg-yellow-400 text-black rotate-2" /> */}
-        <Events initialUpcomingEvents={upcomingEvent} />
+        <Marquee content={marqueeContent2} className="bg-primary text-primary-foreground rotate-2" />
+        <ChainedEvents />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
