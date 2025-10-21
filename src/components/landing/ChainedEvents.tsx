@@ -86,7 +86,6 @@ export default function ChainedEvents() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            <div className="absolute inset-[-20px] bg-red-500/80 rounded-full blur-2xl -z-10 animate-pulse"></div>
             <Image src="/images/board.svg" layout="fill" objectFit="contain" alt="Placard"/>
           </motion.div>
         </div>
