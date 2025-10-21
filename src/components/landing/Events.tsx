@@ -33,7 +33,7 @@ interface UpcomingEvent {
 export default function Events({
 	initialUpcomingEvents,
 }: {
-	initialUpcomingEvents: UpcomingEvent[]
+	initialUpcomingEvents: UpcomingEvent[] | null
 }) {
 	const upcomingEvents = initialUpcomingEvents
 	const loading = !initialUpcomingEvents
