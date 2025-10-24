@@ -26,7 +26,7 @@ export default function FeaturedEvents({ images }: { images: string[] }) {
 
 	return (
 		<div className='flex flex-col items-center w-full'>
-			<h1 className="font-['Rock_Salt'] text-4xl md:text-5xl font-bold tracking-wider mb-8 text-center">
+			<h1 className="font-['Special_Elite'] text-3xl md:text-4xl font-bold tracking-wider mb-8 text-center">
 				FEATURED EVENTS
 			</h1>
 			<div className='overflow-hidden w-full' ref={emblaRef}>
