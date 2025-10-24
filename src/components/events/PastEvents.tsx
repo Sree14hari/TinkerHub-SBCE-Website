@@ -13,7 +13,7 @@ export default function PastEvents({ events }: { events: Event[] }) {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.6 }}>
-					<h1 className="font-['Rock_Salt'] text-3xl md:text-4xl font-bold tracking-wider">
+					<h1 className="font-['Special_Elite'] text-3xl md:text-4xl font-bold tracking-wider">
 						PAST EVENTS
 					</h1>
 				</motion.div>
