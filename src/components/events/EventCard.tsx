@@ -29,7 +29,7 @@ export default function EventCard({ event }: { event: Event }) {
 				whileHover={{ scale: 1.02, y: -5, rotate: rotation }}>
 				<div className='absolute -top-4 -left-3 w-16 h-16'>
 					<Image
-						src='/Events/pin.png'
+						src='/images/pin.png'
 						alt='Pin'
 						width={64}
 						height={64}
