@@ -4,22 +4,34 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
+import { ChevronDown, Menu } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Events', href: '/events' },
   { label: 'ResourceHub', href: '/resourceHub' },
-  { label: 'Join Us', href: '#' },
+];
+
+const peopleLinks = [
+  { label: 'Core Team', href: '#' },
+  { label: 'Members', href: '#' },
+  { label: 'Participants', href: '#' },
 ];
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+  const [isPeopleMenuOpen, setIsPeopleMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,8 +69,6 @@ export default function Header() {
                   ? "hover:text-red-500"
                   : link.label === 'ResourceHub'
                   ? "hover:text-green-500"
-                  : link.label === 'Join Us'
-                  ? "hover:text-cyan-500"
                   : "hover:text-primary/80"
               )}
             >
@@ -69,7 +79,6 @@ export default function Header() {
                     "absolute bottom-[-4px] left-0 h-0.5 w-full",
                     link.label === 'Events' ? "bg-red-500" :
                     link.label === 'ResourceHub' ? "bg-green-500" :
-                    link.label === 'Join Us' ? "bg-cyan-500" :
                     "bg-primary"
                   )}
                   layoutId="underline"
@@ -80,6 +89,57 @@ export default function Header() {
               )}
             </Link>
           ))}
+          <DropdownMenu open={isPeopleMenuOpen} onOpenChange={setIsPeopleMenuOpen}>
+            <DropdownMenuTrigger asChild>
+              <div 
+                className="relative flex items-center gap-1 cursor-pointer"
+                onMouseEnter={() => { setHoveredLink('People'); setIsPeopleMenuOpen(true); }}
+                onMouseLeave={() => { setHoveredLink(null); setIsPeopleMenuOpen(false); }}
+              >
+                <span className="text-lg font-bold text-foreground transition-colors hover:text-blue-500">
+                  People
+                </span>
+                <ChevronDown className={cn("h-5 w-5 text-foreground transition-transform duration-200", isPeopleMenuOpen && "rotate-180")} />
+                {hoveredLink === 'People' && (
+                  <motion.div
+                    className="absolute bottom-[-4px] left-0 h-0.5 w-full bg-blue-500"
+                    layoutId="underline"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  />
+                )}
+              </div>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent 
+              className="bg-white"
+              onMouseEnter={() => setIsPeopleMenuOpen(true)}
+              onMouseLeave={() => setIsPeopleMenuOpen(false)}
+            >
+              {peopleLinks.map((link) => (
+                <DropdownMenuItem key={link.label} asChild>
+                  <Link href={link.href} className="text-foreground hover:bg-gray-100">{link.label}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+           <Link
+              href="#"
+              onMouseEnter={() => setHoveredLink('Join Us')}
+              onMouseLeave={() => setHoveredLink(null)}
+              className="relative text-lg font-bold text-foreground transition-colors hover:text-cyan-500"
+            >
+              Join Us
+              {hoveredLink === 'Join Us' && (
+                <motion.div
+                  className="absolute bottom-[-4px] left-0 h-0.5 w-full bg-cyan-500"
+                  layoutId="underline"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                />
+              )}
+            </Link>
         </nav>
         <div className="md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -104,14 +164,30 @@ export default function Header() {
                           ? "hover:text-red-500"
                           : link.label === 'ResourceHub'
                           ? "hover:text-green-500"
-                          : link.label === 'Join Us'
-                          ? "hover:text-cyan-500"
                           : "hover:text-primary/80"
                       )}
                     >
                       {link.label}
                     </Link>
                   ))}
+                  <div className="text-4xl font-black text-foreground">People</div>
+                   {peopleLinks.map((link) => (
+                    <Link
+                      key={link.label}
+                      href={link.href}
+                      onClick={closeMobileMenu}
+                      className="text-2xl font-bold text-muted-foreground hover:text-blue-500"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                   <Link
+                      href="#"
+                      onClick={closeMobileMenu}
+                      className="text-4xl font-black text-foreground transition-colors hover:text-cyan-500"
+                    >
+                      Join Us
+                    </Link>
                 </nav>
               </div>
             </SheetContent>
