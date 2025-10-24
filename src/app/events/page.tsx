@@ -1,7 +1,7 @@
-import Header from '@/components/landing/Header'
-import Footer from '@/components/landing/Footer'
-import type { Event } from '@/components/events/EventCard'
-import UpcomingEvents from '@/components/events/UpcomingEvents'
+import Header from "@/components/landing/Header"
+import Footer from "@/components/landing/Footer"
+import type { Event } from "@/components/events/EventCard"
+import UpcomingEvents from "@/components/events/UpcomingEvents"
 
 const events: Event[] = [
 	{
@@ -48,8 +48,8 @@ export default async function EventsPage() {
 			<Header />
 			<main className='flex-1 py-16 md:py-24'>
 				<div className='container'>
-					<h1 className='mb-12 text-center font-bold text-4xl tracking-tight text-foreground md:text-5xl'>
-						Upcoming Events
+					<h1 className='font-sans text-5xl font-extrabold text-center mb-12 tracking-wider'>
+						UPCOMING EVENTS
 					</h1>
 					<UpcomingEvents events={events} />
 				</div>

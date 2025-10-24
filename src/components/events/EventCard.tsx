@@ -1,7 +1,8 @@
 "use client"
 
+import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 
 export interface Event {
 	id: number
@@ -11,25 +12,44 @@ export interface Event {
 }
 
 export default function EventCard({ event }: { event: Event }) {
+	const [rotation, setRotation] = useState(0)
+
+	useEffect(() => {
+		setRotation(Math.random() * 4 - 2)
+	}, [])
+
 	return (
-		<div className='group relative h-full w-full overflow-hidden rounded-2xl bg-gray-100 shadow-md transition-shadow duration-300 hover:shadow-xl'>
-			<div className='relative w-full aspect-[16/10] overflow-hidden'>
-				<Image
-					src={event.image}
-					alt={event.title}
-					fill
-					className='object-cover transition-transform duration-300 group-hover:scale-105'
-					data-ai-hint='event photo'
-				/>
-			</div>
-			<div className='p-6 text-center'>
-				<h3 className='font-bold text-xl text-gray-900'>{event.title}</h3>
-				<p className='mt-1 text-sm text-gray-500'>{event.date}</p>
-				<Button className='mt-4 rounded-full bg-gray-900 px-8 text-white shadow-lg transition-all duration-300 hover:bg-gray-800 hover:shadow-md'>
-					View Event
-				</Button>
-			</div>
-			<div className='absolute bottom-0 h-20 w-full bg-gradient-to-t from-white/20 to-transparent blur-xl'></div>
+		<div className='relative group w-full h-full'>
+			<motion.div
+				className='relative w-full h-full bg-white p-4 shadow-lg border-t-2 border-gray-200 transform transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-xl'
+				style={{
+					backgroundImage: "url('/images/notebook-paper.svg')",
+					backgroundSize: "cover",
+					transform: `rotate(${rotation}deg)`,
+				}}
+				whileHover={{ scale: 1.02, y: -5 }}>
+				<div className='absolute -top-4 -left-3 w-16 h-16'>
+					<Image
+						src='/images/pin.png'
+						alt='Pin'
+						width={64}
+						height={64}
+						className='transform -rotate-12'
+					/>
+				</div>
+				<div className='flex flex-col justify-between h-full text-center py-6'>
+					<h3
+						className='font-["Rock_Salt"] text-lg md:text-xl font-bold text-gray-800'
+						style={{ transform: `rotate(${rotation * -1.2}deg)` }}>
+						{event.title}
+					</h3>
+					<div
+						className='text-center mt-auto'
+						style={{ transform: `rotate(${rotation * -0.5}deg)` }}>
+						<p className='text-sm text-gray-600 font-medium'>{event.date}</p>
+					</div>
+				</div>
+			</motion.div>
 		</div>
 	)
 }

@@ -30,9 +30,9 @@ export default function UpcomingEvents({ events }: { events: Event[] }) {
       }}
       className="w-full"
     >
-      <CarouselContent className="-ml-4">
+      <CarouselContent className="-ml-8">
         {events.map((event) => (
-          <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3 pl-4">
+          <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3 pl-8">
             <div className="p-1 h-[280px]">
               <EventCard event={event} />
             </div>
