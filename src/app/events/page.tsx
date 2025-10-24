@@ -44,9 +44,10 @@ const events: Event[] = [
 ]
 
 const featuredEventImages = [
-    "https://sbce.ac.in/uploads/IMG_9535_f7e53f193f.jpg",
+	"https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
     "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
-    "https://sbce.ac.in/uploads/IMG_9535_f7e53f193f.jpg"
+	"https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+    
 ]
 
 export default async function EventsPage() {
@@ -55,7 +56,7 @@ export default async function EventsPage() {
 			<Header />
 			<main className='flex-1'>
 				<div className='py-16 md:py-24'>
-					<div className='container'>
+					<div className='container max-w-6xl'>
 						<FeaturedEvents images={featuredEventImages} />
 					</div>
 				</div>
