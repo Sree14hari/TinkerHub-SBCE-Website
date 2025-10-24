@@ -26,6 +26,27 @@ const events: Event[] = [
 		image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop",
 		organizer: "Organizer Name",
 	},
+	{
+		id: 4,
+		title: "Talk Session",
+		date: "2025-09-15",
+		image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop",
+		organizer: "Organizer Name",
+	},
+	{
+		id: 5,
+		title: "Talk Session",
+		date: "2025-09-15",
+		image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop",
+		organizer: "Organizer Name",
+	},
+	{
+		id: 6,
+		title: "Talk Session",
+		date: "2025-09-15",
+		image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop",
+		organizer: "Organizer Name",
+	},
 ]
 
 const featuredEventImages = [
@@ -36,7 +57,7 @@ const featuredEventImages = [
 
 export default async function EventsPage() {
 	return (
-		<div className='flex min-h-dvh flex-col bg-background'>
+		<div className='flex min-h-dvh flex-col bg-background crumpled-paper'>
 			<Header />
 			<main className='flex-1'>
 				<div className='py-16 md:py-24'>
