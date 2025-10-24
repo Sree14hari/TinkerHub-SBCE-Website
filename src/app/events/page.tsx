@@ -45,7 +45,7 @@ const events: Event[] = [
 
 export default async function EventsPage() {
 	return (
-		<div className='flex min-h-dvh flex-col bg-background events-bg'>
+		<div className='flex min-h-dvh flex-col bg-background'>
 			<Header />
 			<main className='flex-1'>
 				<div className="py-16 md:py-24">
