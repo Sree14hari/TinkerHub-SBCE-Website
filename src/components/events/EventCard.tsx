@@ -9,6 +9,7 @@ export interface Event {
 	title: string
 	date: string
 	image: string
+	organizer?: string
 }
 
 export default function EventCard({ event }: { event: Event }) {
@@ -20,7 +21,7 @@ export default function EventCard({ event }: { event: Event }) {
 	}, [])
 
 	return (
-		<div className='relative group w-full h-full'>
+		<div className='relative group w-full h-full pt-4'>
 			<motion.div
 				className='relative w-full h-full bg-white p-4 shadow-lg border-t-2 border-gray-100 transform transition-transform duration-300'
 				style={{
@@ -36,21 +37,19 @@ export default function EventCard({ event }: { event: Event }) {
 						className='transform -rotate-12'
 					/>
 				</div>
-                <div className="relative w-full h-32 mb-4">
-                    <Image
-                        src={event.image}
-                        alt={event.title}
-                        fill
-                        className="object-cover"
-                    />
-                </div>
+				<div className='relative w-full h-32 mb-4'>
+					<Image
+						src={event.image}
+						alt={event.title}
+						fill
+						className='object-cover'
+					/>
+				</div>
 				<div className='flex flex-col justify-between h-full text-center pt-2 pb-4'>
-					<h3
-						className='font-["Rock_Salt"] text-lg md:text-xl font-bold text-gray-800 px-4'>
+					<h3 className='font-["Rock_Salt"] text-lg md:text-xl font-bold text-gray-800 px-4'>
 						{event.title}
 					</h3>
-					<div
-						className='text-center mt-auto self-end px-4 pt-4'>
+					<div className='text-center mt-auto self-end px-4 pt-4'>
 						<p className='text-sm text-gray-600 font-medium'>{event.date}</p>
 					</div>
 				</div>
