@@ -12,8 +12,6 @@ export interface ResourceHubCardProps {
 	handDirection?: HandDirection
 	cardSrc?: string
 	handSrc?: string
-	width?: number
-	height?: number
 	className?: string
 }
 
@@ -23,8 +21,6 @@ export default function Cards({
 	handDirection = "left",
 	cardSrc = "/images/resource_hub/resource_hub.svg",
 	handSrc,
-	width = 358,
-	height = 370,
 	className = "",
 }: ResourceHubCardProps) {
 	const [hovered, setHovered] = useState(false)
@@ -40,8 +36,7 @@ export default function Cards({
 
 	return (
 		<motion.div
-			className={`relative cursor-pointer ${className} max-sm:!h-[340px]`}
-			style={{ width, height }}
+			className={`relative cursor-pointer w-[300px] h-[310px] md:w-[400px] md:h-[415px] ${className}`}
 			onHoverStart={() => setHovered(true)}
 			onHoverEnd={() => setHovered(false)}
 			initial={{ opacity: 0, y: 24 }}
@@ -64,8 +59,7 @@ export default function Cards({
 				<Image
 					src={cardSrc}
 					alt=''
-					width={width}
-					height={height}
+					layout="fill"
 					priority={false}
 					className='object-contain select-none pointer-events-none'
 				/>

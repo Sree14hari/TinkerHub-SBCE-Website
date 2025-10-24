@@ -117,7 +117,7 @@ export default function TiltBanner({
 							key={`${ch}-${i}`}
 							custom={i}
 							variants={letterVariants}
-							className='inline-block text-[28px] md:text-[34px] font-semibold'>
+							className='inline-block text-[22px] md:text-[34px] font-semibold'>
 							{ch}
 						</motion.span>
 					))}

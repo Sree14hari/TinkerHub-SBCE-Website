@@ -8,7 +8,7 @@ export default async function ResourceHub() {
 	return (
 		<div>
 			<div>
-				<div className='mx-auto max-w-6xl px-6 mt-[25px]'>
+				<div className='mx-auto max-w-6xl px-4 md:px-6 mt-6 md:mt-[25px]'>
 					<TiltBanner
 						text='RESOURCES PAGE'
 						rotate={-3}
@@ -29,8 +29,7 @@ export default async function ResourceHub() {
 								title='Concepts'
 								description='The concept explains the main idea or theme behind the learning topic — what it is about and why it matters.'
 								handDirection='left'
-								width={400}
-								height={415}
+								
 							/>
 						</Link>
 					</div>
@@ -41,8 +40,7 @@ export default async function ResourceHub() {
 								description='The content is the actual learning material — the information, lessons, videos, or activities that help learners understand the concept.'
 								handDirection='right'
 								handSrc='/images/resource_hub/resource_hub_right_animation.svg'
-								width={400}
-								height={415}
+								
 							/>
 						</Link>
 					</div>
