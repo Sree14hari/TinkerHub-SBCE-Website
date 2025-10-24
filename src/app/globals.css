@@ -16,6 +16,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.events-bg {
+  background-image: url('/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* =========================
    Theme Variables
    ========================= */

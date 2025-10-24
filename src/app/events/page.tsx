@@ -45,12 +45,12 @@ const events: Event[] = [
 
 export default async function EventsPage() {
 	return (
-		<div className='flex min-h-dvh flex-col bg-background'>
+		<div className='flex min-h-dvh flex-col bg-background events-bg'>
 			<Header />
 			<main className='flex-1'>
 				<div className="py-16 md:py-24">
 					<div className='container'>
-						<h1 className='font-sans text-5xl font-extrabold text-center mb-12 tracking-wider'>
+						<h1 className='font-sans text-5xl font-extrabold text-center mb-12 tracking-wider text-white'>
 							UPCOMING EVENTS
 						</h1>
 						<UpcomingEvents events={events} />
