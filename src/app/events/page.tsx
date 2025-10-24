@@ -2,6 +2,7 @@ import Header from "@/components/landing/Header"
 import Footer from "@/components/landing/Footer"
 import type { Event } from "@/components/events/EventCard"
 import UpcomingEvents from "@/components/events/UpcomingEvents"
+import EventsGrid from "@/components/events/EventsGrid"
 
 const events: Event[] = [
 	{
@@ -46,13 +47,16 @@ export default async function EventsPage() {
 	return (
 		<div className='flex min-h-dvh flex-col bg-background'>
 			<Header />
-			<main className='flex-1 py-16 md:py-24'>
-				<div className='container'>
-					<h1 className='font-sans text-5xl font-extrabold text-center mb-12 tracking-wider'>
-						UPCOMING EVENTS
-					</h1>
-					<UpcomingEvents events={events} />
+			<main className='flex-1'>
+				<div className="py-16 md:py-24">
+					<div className='container'>
+						<h1 className='font-sans text-5xl font-extrabold text-center mb-12 tracking-wider'>
+							UPCOMING EVENTS
+						</h1>
+						<UpcomingEvents events={events} />
+					</div>
 				</div>
+				<EventsGrid initialEvents={events} />
 			</main>
 			<Footer />
 		</div>
