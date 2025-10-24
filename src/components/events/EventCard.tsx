@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export interface Event {
   id: number;
@@ -10,6 +11,12 @@ export interface Event {
 }
 
 export default function EventCard({ event }: { event: Event }) {
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    setRotation(Math.random() > 0.5 ? 1.5 : -1.5);
+  }, []);
+
   return (
     <div className="relative group w-full h-full">
       <motion.div
@@ -17,7 +24,7 @@ export default function EventCard({ event }: { event: Event }) {
         style={{ 
           backgroundImage: "url('/images/notebook-paper.svg')", 
           backgroundSize: 'cover',
-          rotate: Math.random() > 0.5 ? 1.5 : -1.5,
+          rotate: rotation,
         }}
         whileHover={{
           scale: 1.02,
