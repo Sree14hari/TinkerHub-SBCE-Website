@@ -85,7 +85,6 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
           <div className="relative w-[400px] h-[150px] md:w-[800px] md:h-[253px]">
             <Image

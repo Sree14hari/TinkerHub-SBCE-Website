@@ -1,26 +1,60 @@
-import Header from '@/components/landing/Header';
-import Footer from '@/components/landing/Footer';
-import EventsGrid from '@/components/events/EventsGrid';
-import type { Event } from '@/components/events/EventsGrid';
+import Header from "@/components/landing/Header"
+import Footer from "@/components/landing/Footer"
+import type { Event } from "@/components/events/EventCard"
+import UpcomingEvents from "@/components/events/UpcomingEvents"
 
-// Mock data to replace Supabase fetch
 const events: Event[] = [
-  { id: 1, title: 'Intro to Web Dev', image: 'https://picsum.photos/seed/event1/400/300' },
-  { id: 2, title: 'Design Workshop', image: 'https://picsum.photos/seed/event2/400/300' },
-  { id: 3, title: 'Hackathon 2024', image: 'https://picsum.photos/seed/event3/400/300' },
-  { id: 4, title: 'AI/ML Talk', image: 'https://picsum.photos/seed/event4/400/300' },
-  { id: 5, title: 'Capture The Flag', image: 'https://picsum.photos/seed/event5/400/300' },
-  { id: 6, title: 'Community Meetup', image: 'https://picsum.photos/seed/event6/400/300' },
-];
+	{
+		id: 1,
+		title: "Poster Design Competition",
+		date: "2025-06-23",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+	},
+	{
+		id: 2,
+		title: "Workshop on AI",
+		date: "2024-11-05",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+	},
+	{
+		id: 3,
+		title: "Networking Gala",
+		date: "2024-11-20",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+	},
+	{
+		id: 4,
+		title: "Hackathon 2024",
+		date: "2024-12-01",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+	},
+	{
+		id: 5,
+		title: "Student Drone Competition",
+		date: "2025-01-10",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+	},
+	{
+		id: 6,
+		title: "Intro to Web Dev",
+		date: "2024-10-25",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+	},
+]
 
 export default async function EventsPage() {
-  return (
-    <div className="flex min-h-dvh flex-col crumpled-paper">
-      <Header />
-      <main className="flex-1">
-        <EventsGrid initialEvents={events} />
-      </main>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className='flex min-h-dvh flex-col bg-background'>
+			<Header />
+			<main className='flex-1 py-16 md:py-24'>
+				<div className='container'>
+					<h1 className='font-sans text-5xl font-extrabold text-center mb-12 tracking-wider'>
+						UPCOMING EVENTS
+					</h1>
+					<UpcomingEvents events={events} />
+				</div>
+			</main>
+			<Footer />
+		</div>
+	)
 }
