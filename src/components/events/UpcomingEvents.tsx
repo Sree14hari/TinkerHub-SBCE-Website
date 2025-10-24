@@ -33,7 +33,7 @@ export default function UpcomingEvents({ events }: { events: Event[] }) {
       <CarouselContent className="-ml-8">
         {events.map((event) => (
           <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3 pl-8">
-            <div className="p-1 pt-4 h-[300px]">
+            <div className="p-1 pt-8 h-[320px]">
               <EventCard event={event} />
             </div>
           </CarouselItem>

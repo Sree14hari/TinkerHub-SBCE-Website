@@ -1,8 +1,8 @@
 import Header from "@/components/landing/Header"
 import Footer from "@/components/landing/Footer"
 import type { Event } from "@/components/events/EventCard"
-import UpcomingEvents from "@/components/events/UpcomingEvents"
 import EventsGrid from "@/components/events/EventsGrid"
+import FeaturedEvents from "@/components/events/FeaturedEvents"
 
 const events: Event[] = [
 	{
@@ -43,17 +43,20 @@ const events: Event[] = [
 	},
 ]
 
+const featuredEventImages = [
+    "https://sbce.ac.in/uploads/IMG_9535_f7e53f193f.jpg",
+    "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
+    "https://sbce.ac.in/uploads/IMG_9535_f7e53f193f.jpg"
+]
+
 export default async function EventsPage() {
 	return (
 		<div className='flex min-h-dvh flex-col bg-background'>
 			<Header />
 			<main className='flex-1'>
-				<div className="py-16 md:py-24">
+				<div className='py-16 md:py-24'>
 					<div className='container'>
-						<h1 className='font-sans text-5xl font-extrabold text-center mb-12 tracking-wider text-white'>
-							UPCOMING EVENTS
-						</h1>
-						<UpcomingEvents events={events} />
+						<FeaturedEvents images={featuredEventImages} />
 					</div>
 				</div>
 				<EventsGrid initialEvents={events} />
