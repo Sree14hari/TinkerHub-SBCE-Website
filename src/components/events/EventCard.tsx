@@ -15,20 +15,21 @@ export default function EventCard({ event }: { event: Event }) {
 	const [rotation, setRotation] = useState(0)
 
 	useEffect(() => {
+		// Set rotation only on the client to avoid hydration mismatch
 		setRotation(Math.random() * 3 - 1.5)
 	}, [])
 
 	return (
 		<div className='relative group w-full h-full'>
 			<motion.div
-				className='relative w-full h-full bg-white p-4 shadow-lg border-t-2 border-gray-100 transform transition-transform duration-300 overflow-hidden'
+				className='relative w-full h-full bg-white p-4 shadow-lg border-t-2 border-gray-100 transform transition-transform duration-300'
 				style={{
 					transform: `rotate(${rotation}deg)`,
 				}}
 				whileHover={{ scale: 1.02, y: -5, rotate: rotation }}>
 				<div className='absolute -top-4 -left-3 w-16 h-16 z-10'>
 					<Image
-						src='/images/pin.png'
+						src='/Events/pin.png'
 						alt='Pin'
 						width={64}
 						height={64}
