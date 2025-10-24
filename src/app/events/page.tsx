@@ -8,37 +8,37 @@ const events: Event[] = [
 		id: 1,
 		title: "Poster Design Competition",
 		date: "2025-06-23",
-		image: "https://i.postimg.cc/kXq2Xd2x/poster-design.png",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
 	},
 	{
 		id: 2,
 		title: "Workshop on AI",
 		date: "2024-11-05",
-		image: "https://i.postimg.cc/wMPJ15v9/AI-insight.png",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
 	},
 	{
 		id: 3,
 		title: "Networking Gala",
 		date: "2024-11-20",
-		image: "https://i.postimg.cc/9Q6v3d7q/henna-hues.png",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
 	},
 	{
 		id: 4,
 		title: "Hackathon 2024",
 		date: "2024-12-01",
-		image: "https://i.postimg.cc/SxsJ30Vz/cineshow.png",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
 	},
 	{
 		id: 5,
 		title: "Student Drone Competition",
 		date: "2025-01-10",
-		image: "https://i.postimg.cc/1X7Z1g1Q/drone.png",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
 	},
 	{
 		id: 6,
 		title: "Intro to Web Dev",
 		date: "2024-10-25",
-		image: "https://picsum.photos/seed/event1/600/400",
+		image: "https://sbce.ac.in/uploads/medium_POSTER_820aa5e42b.jpg",
 	},
 ]
 
