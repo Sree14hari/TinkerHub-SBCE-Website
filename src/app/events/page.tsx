@@ -1,37 +1,60 @@
-import Header from '@/components/landing/Header';
-import Footer from '@/components/landing/Footer';
-import type { Event } from '@/components/events/EventCard';
-import UpcomingEvents from '@/components/events/UpcomingEvents';
-import { Bot } from 'lucide-react';
-import { motion } from 'framer-motion';
-
+import Header from '@/components/landing/Header'
+import Footer from '@/components/landing/Footer'
+import type { Event } from '@/components/events/EventCard'
+import UpcomingEvents from '@/components/events/UpcomingEvents'
 
 const events: Event[] = [
-  { id: 1, title: 'Intro to Web Dev', image: 'https://picsum.photos/seed/event1/600/400' },
-  { id: 2, title: 'Design Workshop', image: 'https://picsum.photos/seed/event2/600/400' },
-  { id: 3, title: 'Hackathon 2024', image: 'https://picsum.photos/seed/event3/600/400' },
-  { id: 4, title: 'AI/ML Talk', image: 'https://picsum.photos/seed/event4/600/400' },
-  { id: 5, title: 'Capture The Flag', image: 'https://picsum.photos/seed/event5/600/400' },
-  { id: 6, title: 'Community Meetup', image: 'https://picsum.photos/seed/event6/600/400' },
-];
+	{
+		id: 1,
+		title: "Poster Design Competition",
+		date: "2025-06-23",
+		image: "https://i.postimg.cc/kXq2Xd2x/poster-design.png",
+	},
+	{
+		id: 2,
+		title: "Workshop on AI",
+		date: "2024-11-05",
+		image: "https://i.postimg.cc/wMPJ15v9/AI-insight.png",
+	},
+	{
+		id: 3,
+		title: "Networking Gala",
+		date: "2024-11-20",
+		image: "https://i.postimg.cc/9Q6v3d7q/henna-hues.png",
+	},
+	{
+		id: 4,
+		title: "Hackathon 2024",
+		date: "2024-12-01",
+		image: "https://i.postimg.cc/SxsJ30Vz/cineshow.png",
+	},
+	{
+		id: 5,
+		title: "Student Drone Competition",
+		date: "2025-01-10",
+		image: "https://i.postimg.cc/1X7Z1g1Q/drone.png",
+	},
+	{
+		id: 6,
+		title: "Intro to Web Dev",
+		date: "2024-10-25",
+		image: "https://picsum.photos/seed/event1/600/400",
+	},
+]
 
 export default async function EventsPage() {
-  return (
-    <div className="flex min-h-dvh flex-col crumpled-paper">
-      <Header />
-      <main className="flex-1 py-16 md:py-24">
-        <div className="container">
-          <div
-              className="flex items-center justify-center gap-4 md:gap-8 mb-12"
-            >
-              <Bot className="w-12 h-12 md:w-16 md:h-16 text-foreground/80 transform -scale-x-100" />
-              <h1 className="font-black text-4xl md:text-6xl tracking-wider">UPCOMING EVENTS</h1>
-              <Bot className="w-12 h-12 md:w-16 md:h-16 text-foreground/80" />
-          </div>
-          <UpcomingEvents events={events} />
-        </div>
-      </main>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className='flex min-h-dvh flex-col bg-background'>
+			<Header />
+			<main className='flex-1 py-16 md:py-24'>
+				<div className='container'>
+					<h1 className='mb-12 text-center font-bold text-4xl tracking-tight text-foreground md:text-5xl'>
+						Upcoming Events
+					</h1>
+					<UpcomingEvents events={events} />
+				</div>
+			</main>
+			<Footer />
+		</div>
+	)
 }
