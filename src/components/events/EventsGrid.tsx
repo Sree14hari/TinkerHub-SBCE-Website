@@ -4,12 +4,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Bot } from 'lucide-react';
 import EventCard from './EventCard';
+import type { Event } from './EventCard';
 
-export interface Event {
-  id: number;
-  title: string;
-  image: string;
-}
 
 export default function EventsGrid({ initialEvents }: { initialEvents: Event[] }) {
   const [events] = useState<Event[]>(initialEvents);
@@ -34,7 +30,7 @@ export default function EventsGrid({ initialEvents }: { initialEvents: Event[] }
         ) : events.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
             {events.map((event, index) => (
-              <EventCard key={event.id} event={event} index={index} />
+              <EventCard key={event.id} event={event} />
             ))}
           </div>
         ) : (

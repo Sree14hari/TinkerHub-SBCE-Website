@@ -2,37 +2,39 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import type { Event } from './EventsGrid';
 
-const BoardPin = () => (
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-    <div className="w-4 h-4 rounded-full bg-red-500 border-2 border-red-700 shadow-md"></div>
-  </div>
-);
+export interface Event {
+  id: number;
+  title: string;
+  image: string;
+}
 
-export default function EventCard({ event, index }: { event: Event, index: number }) {
-  const rotation = index % 2 === 0 ? -2 : 2;
+export default function EventCard({ event }: { event: Event }) {
   return (
-    <motion.div
-      className="relative group"
-      initial={{ opacity: 0, y: 50, rotate: rotation + 10 }}
-      whileInView={{ opacity: 1, y: 0, rotate: rotation }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-    >
-      <div className="relative bg-white p-3 shadow-md border-t-2 border-gray-200" style={{ backgroundImage: "url('/images/notebook-paper.svg')", backgroundSize: 'cover' }}>
-        <BoardPin />
-        <div className="relative w-full aspect-[4/3] overflow-hidden border-2 border-gray-200">
+    <div className="relative group w-full h-full">
+      <motion.div
+        className="relative w-full h-full bg-white p-4 shadow-lg border-t-2 border-gray-200 transform transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-xl"
+        style={{ 
+          backgroundImage: "url('/images/notebook-paper.svg')", 
+          backgroundSize: 'cover',
+          rotate: Math.random() > 0.5 ? 1.5 : -1.5,
+        }}
+        whileHover={{
+          scale: 1.02,
+          rotate: 0
+        }}
+      >
+        <div className="relative w-full aspect-[16/9] overflow-hidden border-2 border-gray-200">
           <Image
             src={event.image}
             alt={event.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
             data-ai-hint="event photo"
           />
         </div>
-      </div>
-      <h3 className="font-['Rock_Salt'] text-center text-lg mt-4">{event.title}</h3>
-    </motion.div>
+        <h3 className="font-['Rock_Salt'] text-center text-lg mt-4 text-gray-800">{event.title}</h3>
+      </motion.div>
+    </div>
   );
 };
