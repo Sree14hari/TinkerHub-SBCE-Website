@@ -59,7 +59,7 @@ export default function PeoplePageLayout({ title, members }: PeoplePageLayoutPro
               <p className="text-primary font-semibold mb-2">We're Hiring!</p>
               <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">Let's Meet Our Team</h1>
               <p className="mt-4 text-lg text-muted-foreground">
-                Gravida in fermentum et sollicitudin ac orci phasellus egestas. Molestie a iaculis at erat pellentesque adipiscing commodo.
+                Meet the passionate individuals who are driving our community forward. We're a mix of students, creators, and innovators dedicated to learning and building together.
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
