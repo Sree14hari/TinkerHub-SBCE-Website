@@ -42,7 +42,7 @@ export default function Footer() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <p className="font-['Rock_Salt'] text-sm text-foreground/70 pb-4 transition-opacity duration-300 group-hover:opacity-0">
+          <p className="font-['Special_Elite'] text-sm text-foreground/70 pb-4 transition-opacity duration-300 group-hover:opacity-0">
             made using loads of coffeee...
           </p>
           <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
