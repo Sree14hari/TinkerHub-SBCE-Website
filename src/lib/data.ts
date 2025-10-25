@@ -1,5 +1,14 @@
-
 import { Github, Instagram, Linkedin, Mail, Facebook, Twitter } from 'lucide-react';
+
+export interface Event {
+  id: number;
+  title: string;
+  date: string;
+  description: string;
+  image: string;
+  organizer?: string;
+}
+
 
 export const navLinks = [
   { label: 'About', href: '#about' },
@@ -16,7 +25,10 @@ export const aboutData = {
   image: 'about-us',
 };
 
-export const eventsData = {
+export const eventsData: {
+  upcoming: Event[];
+  past: Event[];
+} = {
   upcoming: [
     {
       id: 1,
@@ -32,17 +44,24 @@ export const eventsData = {
       description: 'A 48-hour hackathon to build innovative solutions for real-world problems. Prizes, food, and fun await!',
       image: 'event-2',
     },
+    {
+      id: 3,
+      title: 'AI/ML Demystified',
+      date: 'December 5, 2024',
+      description: 'Explore the world of Artificial Intelligence and Machine Learning with our expert-led session.',
+      image: 'event-3',
+    },
   ],
   past: [
     {
-      id: 3,
+      id: 4,
       title: 'Tech Talk: The Future of AI',
       date: 'September 10, 2024',
       description: 'An insightful talk by an industry expert on the latest trends and future possibilities in Artificial Intelligence.',
       image: 'event-3',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Community Icebreaker',
       date: 'August 30, 2024',
       description: 'Our first event of the semester! A fun-filled evening of games, networking, and getting to know the community.',

@@ -8,8 +8,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import EventCard from "./EventCard"
-import type { Event } from "./EventCard"
+import type { Event } from "@/lib/data"
+import UpcomingEventCard from "./UpcomingEventCard"
 
 export default function UpcomingEvents({ events }: { events: Event[] }) {
   const loading = !events || events.length === 0;
@@ -33,8 +33,8 @@ export default function UpcomingEvents({ events }: { events: Event[] }) {
       <CarouselContent className="-ml-8">
         {events.map((event) => (
           <CarouselItem key={event.id} className="md:basis-1/2 lg:basis-1/3 pl-8">
-            <div className="p-1 pt-8 h-[320px]">
-              <EventCard event={event} />
+            <div className="p-1 h-full">
+              <UpcomingEventCard event={event} />
             </div>
           </CarouselItem>
         ))}
