@@ -1,5 +1,5 @@
 
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail, Facebook, Twitter } from 'lucide-react';
 
 export const navLinks = [
   { label: 'About', href: '#about' },
@@ -130,29 +130,30 @@ export const teamData = {
 };
 
 export const coreTeamData = [
-  { id: 1, name: 'Alex Doe', role: 'Community Lead', image: 'core-team-1' },
-  { id: 2, name: 'Brenda Smith', role: 'Technical Lead', image: 'core-team-2' },
-  { id: 3, name: 'Chris Johnson', role: 'Operations Lead', image: 'core-team-3' },
-  { id: 4, name: 'Diana Miller', role: 'Marketing Lead', image: 'core-team-4' },
+  { id: 1, name: 'Alex Doe', role: 'Community Lead', image: 'core-team-1', bio: "Used to work at IBM but quit because of robotz.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 2, name: 'Brenda Smith', role: 'Technical Lead', image: 'core-team-2', bio: "Hello, I like not doing anything at all. Let's DM.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 3, name: 'Chris Johnson', role: 'Operations Lead', image: 'core-team-3', bio: "Prodigy with record-breaking 176 IQ and many awards.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 4, name: 'Diana Miller', role: 'Marketing Lead', image: 'core-team-4', bio: "Hello, I like money. It is the only purpose of in my life.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
 ];
 
 export const membersData = [
-  { id: 1, name: 'Ethan Hunt', role: 'Member', image: 'member-1' },
-  { id: 2, name: 'Fiona Glenanne', role: 'Member', image: 'member-2' },
-  { id: 3, name: 'George Costanza', role: 'Member', image: 'member-3' },
-  { id: 4, name: 'Hannah Montana', role: 'Member', image: 'member-4' },
-  { id: 5, name: 'Ian Malcolm', role: 'Member', image: 'member-5' },
-  { id: 6, name: 'Julia Child', role: 'Member', image: 'member-6' },
+  { id: 1, name: 'Ethan Hunt', role: 'Member', image: 'member-1', bio: "I'm just here to clean the floor, that's all. Nothing special.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 2, name: 'Fiona Glenanne', role: 'Member', image: 'member-2', bio: "I don't choose this job. It choose me. Do you get it?", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 3, name: 'George Costanza', role: 'Member', image: 'member-3', bio: "I like managing people and controlling them.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 4, name: 'Hannah Montana', role: 'Member', image: 'member-4', bio: "Ex-Singer but decided to work on startups.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 5, name: 'Ian Malcolm', role: 'Member', image: 'member-5', bio: "Prodigy with record-breaking 176 IQ and many awards.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 6, name: 'Julia Child', role: 'Member', image: 'member-6', bio: "Hello, I like not doing anything at all. Let's DM.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
 ];
 
 export const participantsData = [
-  { id: 1, name: 'Kara Danvers', role: 'Participant', image: 'participant-1' },
-  { id: 2, name: 'Leo Fitz', role: 'Participant', image: 'participant-2' },
-  { id: 3, name: 'Monica Geller', role: 'Participant', image: 'participant-3' },
-  { id: 4, name: 'Nate Archibald', role: 'Participant', image: 'participant-4' },
-  { id: 5, name: 'Olivia Pope', role: 'Participant', image: 'participant-5' },
-  { id: 6, name: 'Peter Parker', role: 'Participant', image: 'participant-6' },
+  { id: 1, name: 'Kara Danvers', role: 'Participant', image: 'participant-1', bio: "Used to work at IBM but quit because of robotz.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 2, name: 'Leo Fitz', role: 'Participant', image: 'participant-2', bio: "Hello, I like money. It is the only purpose of in my life.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 3, name: 'Monica Geller', role: 'Participant', image: 'participant-3', bio: "I don't choose this job. It choose me. Do you get it?", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 4, name: 'Nate Archibald', role: 'Participant', image: 'participant-4', bio: "I like managing people and controlling them.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 5, name: 'Olivia Pope', role: 'Participant', image: 'participant-5', bio: "Ex-Singer but decided to work on startups.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
+  { id: 6, name: 'Peter Parker', role: 'Participant', image: 'participant-6', bio: "Prodigy with record-breaking 176 IQ and many awards.", socials: { twitter: "#", facebook: "#", linkedin: "#" } },
 ];
+
 
 export const socialLinks = [
   { name: 'GitHub', icon: Github, url: 'https://github.com/tinkerhub' },
