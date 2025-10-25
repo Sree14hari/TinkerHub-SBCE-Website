@@ -3,86 +3,182 @@
     {
       "id": "about-us",
       "description": "Students collaborating on a project",
-      "imageUrl": "https://picsum.photos/seed/2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGNvbGxhYm9yYXRpbmd8ZW58MHx8fHwxNzYxMzE1NDY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "students collaborating"
     },
     {
       "id": "event-1",
       "description": "Workshop on web development",
-      "imageUrl": "https://picsum.photos/seed/3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b3Jrc2hvcCUyMGNvZGV8ZW58MHx8fHwxNzYxMzY4NDQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "workshop code"
     },
     {
       "id": "event-2",
       "description": "Hackathon event in progress",
-      "imageUrl": "https://picsum.photos/seed/4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1621575539674-dbed82aa83ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYWNrYXRob24lMjBldmVudHxlbnwwfHx8fDE3NjEzMjk3MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hackathon event"
     },
     {
       "id": "event-3",
       "description": "Guest speaker giving a tech talk",
-      "imageUrl": "https://picsum.photos/seed/5/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1759496434742-771c92e66103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzcGVha2VyJTIwcHJlc2VudGF0aW9ufGVufDB8fHx8MTc2MTI3MTIyNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "speaker presentation"
     },
     {
       "id": "event-4",
       "description": "Team building activity",
-      "imageUrl": "https://picsum.photos/seed/6/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1515169067868-5387ec356754?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVhbSUyMGJ1aWxkaW5nfGVufDB8fHx8MTc2MTI4NjkxOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "team building"
     },
     {
       "id": "project-1",
       "description": "Screenshot of a mobile application",
-      "imageUrl": "https://picsum.photos/seed/7/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1551650975-87deedd944c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzYxMjk2Nzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mobile app"
     },
     {
       "id": "project-2",
       "description": "Web dashboard analytics interface",
-      "imageUrl": "https://picsum.photos/seed/8/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1686061593213-98dad7c599b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFzaGJvYXJkJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2MTI4MDk5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dashboard analytics"
     },
     {
       "id": "project-3",
       "description": "Robotics project with hardware components",
-      "imageUrl": "https://picsum.photos/seed/9/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1661078482897-2d0a3cb611e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb2JvdGljcyUyMGhhcmR3YXJlfGVufDB8fHx8MTc2MTM2ODQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "robotics hardware"
     },
     {
       "id": "project-4",
       "description": "Data visualization chart",
-      "imageUrl": "https://picsum.photos/seed/10/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NjEzMDM3MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data visualization"
     },
     {
       "id": "team-faculty-1",
       "description": "Profile picture of a faculty coordinator",
-      "imageUrl": "https://picsum.photos/seed/11/200/200",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyNzg2MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional portrait"
     },
     {
       "id": "team-student-1",
       "description": "Profile picture of a student lead",
-      "imageUrl": "https://picsum.photos/seed/12/200/200",
+      "imageUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxMjgxNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "student portrait"
     },
     {
       "id": "team-student-2",
       "description": "Profile picture of a student lead",
-      "imageUrl": "https://picsum.photos/seed/13/200/200",
+      "imageUrl": "https://images.unsplash.com/photo-1517256673644-36ad11246d21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxMjgxNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "student portrait"
     },
     {
       "id": "team-student-3",
       "description": "Profile picture of a student lead",
-      "imageUrl": "https://picsum.photos/seed/14/200/200",
+      "imageUrl": "https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxMjgxNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "student portrait"
     },
     {
       "id": "team-student-4",
       "description": "Profile picture of a student lead",
-      "imageUrl": "https://picsum.photos/seed/15/200/200",
+      "imageUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxMjgxNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "student portrait"
+    },
+    {
+      "id": "core-team-1",
+      "description": "Profile picture of a core team member",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyNzg2MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "core-team-2",
+      "description": "Profile picture of a core team member",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyNzg2MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "core-team-3",
+      "description": "Profile picture of a core team member",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyNzg2MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "core-team-4",
+      "description": "Profile picture of a core team member",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyNzg2MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "member-1",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1517256673644-36ad11246d21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxMjgxNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "member-2",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1650153265880-889a8b60a10b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudCUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MTI4MTY4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "member-3",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1650153265880-889a8b60a10b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudCUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MTI4MTY4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "member-4",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxMjgxNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "member-5",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxMjgxNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "member-6",
+      "description": "Profile picture of a member",
+      "imageUrl": "https://images.unsplash.com/photo-1650153265880-889a8b60a10b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3R1ZGVudCUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MTI4MTY4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student portrait"
+    },
+    {
+      "id": "participant-1",
+      "description": "Profile picture of a participant",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzMjQyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "participant-2",
+      "description": "Profile picture of a participant",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzMjQyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "participant-3",
+      "description": "Profile picture of a participant",
+      "imageUrl": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzMjQyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "participant-4",
+      "description": "Profile picture of a participant",
+      "imageUrl": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzMjQyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "participant-5",
+      "description": "Profile picture of a participant",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzMjQyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "participant-6",
+      "description": "Profile picture of a participant",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEzMjQyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
     }
   ]
 }

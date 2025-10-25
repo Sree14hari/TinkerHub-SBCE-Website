@@ -1,3 +1,4 @@
+
 import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 export const navLinks = [
@@ -127,6 +128,31 @@ export const teamData = {
     },
   ],
 };
+
+export const coreTeamData = [
+  { id: 1, name: 'Alex Doe', role: 'Community Lead', image: 'core-team-1' },
+  { id: 2, name: 'Brenda Smith', role: 'Technical Lead', image: 'core-team-2' },
+  { id: 3, name: 'Chris Johnson', role: 'Operations Lead', image: 'core-team-3' },
+  { id: 4, name: 'Diana Miller', role: 'Marketing Lead', image: 'core-team-4' },
+];
+
+export const membersData = [
+  { id: 1, name: 'Ethan Hunt', role: 'Member', image: 'member-1' },
+  { id: 2, name: 'Fiona Glenanne', role: 'Member', image: 'member-2' },
+  { id: 3, name: 'George Costanza', role: 'Member', image: 'member-3' },
+  { id: 4, name: 'Hannah Montana', role: 'Member', image: 'member-4' },
+  { id: 5, name: 'Ian Malcolm', role: 'Member', image: 'member-5' },
+  { id: 6, name: 'Julia Child', role: 'Member', image: 'member-6' },
+];
+
+export const participantsData = [
+  { id: 1, name: 'Kara Danvers', role: 'Participant', image: 'participant-1' },
+  { id: 2, name: 'Leo Fitz', role: 'Participant', image: 'participant-2' },
+  { id: 3, name: 'Monica Geller', role: 'Participant', image: 'participant-3' },
+  { id: 4, name: 'Nate Archibald', role: 'Participant', image: 'participant-4' },
+  { id: 5, name: 'Olivia Pope', role: 'Participant', image: 'participant-5' },
+  { id: 6, name: 'Peter Parker', role: 'Participant', image: 'participant-6' },
+];
 
 export const socialLinks = [
   { name: 'GitHub', icon: Github, url: 'https://github.com/tinkerhub' },

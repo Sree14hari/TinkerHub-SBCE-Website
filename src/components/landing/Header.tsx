@@ -23,9 +23,9 @@ const navLinks = [
 ];
 
 const peopleLinks = [
-  { label: 'Core Team', href: '#' },
-  { label: 'Members', href: '#' },
-  { label: 'Participants', href: '#' },
+  { label: 'Core Team', href: '/people/core-team' },
+  { label: 'Members', href: '/people/members' },
+  { label: 'Participants', href: '/people/participants' },
 ];
 
 export default function Header() {
