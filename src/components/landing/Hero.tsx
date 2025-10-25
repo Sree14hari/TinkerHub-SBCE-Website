@@ -88,7 +88,7 @@ export default function Hero() {
         >
           <div className="relative w-[400px] h-[150px] md:w-[800px] md:h-[253px]">
             <Image
-              src="/images/tinker.png"
+              src="/SBCE.gif"
               alt="TinkerHub SBCE"
               fill
               style={{ objectFit: 'contain' }}
