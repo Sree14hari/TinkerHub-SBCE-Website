@@ -16,7 +16,7 @@ interface PeoplePageLayoutProps {
   members: Member[];
 }
 
-const MemberCard = ({ member }: { member: Member }) => {
+export const MemberCard = ({ member }: { member: Member }) => {
   const memberImage = PlaceHolderImages.find(p => p.id === member.image);
   const initials = member.name.split(' ').map(n => n[0]).join('');
 
@@ -24,7 +24,7 @@ const MemberCard = ({ member }: { member: Member }) => {
     <div className="text-center transition-transform duration-300 hover:scale-105">
       <Avatar className="h-32 w-32 mx-auto mb-4 border-4 border-border shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
         {memberImage && (
-          <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />
+          <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} className="object-cover" />
         )}
         <AvatarFallback className="text-3xl">{initials}</AvatarFallback>
       </Avatar>
