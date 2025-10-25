@@ -46,7 +46,7 @@ export default function Footer() {
             made using loads of coffeee...
           </p>
           <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-            <p className="font-['Rock_Salt'] text-sm text-foreground/80">
+            <p className="font-body text-sm text-foreground/80">
               Looking for footer? It’s 2025.
             </p>
           </div>
