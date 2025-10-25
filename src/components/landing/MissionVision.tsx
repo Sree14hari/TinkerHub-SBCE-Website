@@ -73,9 +73,6 @@ export default function MissionVision() {
             </motion.div>
           </div>
         </div>
-        <p className="font-['Special_Elite'] text-sm text-foreground/70 text-center absolute bottom-8">
-            made using loads of coffeee...
-        </p>
       </div>
     </motion.section>
   );
