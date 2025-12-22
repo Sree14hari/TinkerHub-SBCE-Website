@@ -7,7 +7,7 @@ export default async function ResourceHub() {
 		<div className="pt-32 md:pt-40 pb-10">
 			<div className='mx-auto max-w-6xl px-4 md:px-6 mb-12'>
 				<TiltBanner
-					text='RESOURCES PAGE'
+					text='RESOURCES HUB'
 					rotate={-3}
 					skewX={-4}
 					bg='#0a0a0a'
