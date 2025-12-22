@@ -24,7 +24,7 @@ export default function Marquee({
   const fullContent = [...content, ...content, ...content, ...content];
 
   return (
-    <div className={cn("relative overflow-hidden py-4 my-8 w-screen -mx-[50vw] left-1/2", className)}>
+    <div className={cn("relative overflow-hidden py-4 my-8 w-[120vw] -mx-[60vw] left-1/2", className)}>
       <div className="flex animate-marquee whitespace-nowrap">
         {fullContent.map((text, index) => (
           <MarqueeItem
