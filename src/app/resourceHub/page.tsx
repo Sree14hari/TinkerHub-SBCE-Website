@@ -31,7 +31,7 @@ export default async function ResourceHub() {
 						</Link>
 					</div>
 					<div className='w-full lg:w-auto flex justify-center lg:justify-start'>
-						<Link href='/resourceHub/domain'>
+						<Link href='/resourceHub/courses'>
 							<CollageCard
 								title='Courses'
 								description='The content is the actual learning material — the information, lessons, videos, or activities that help learners understand the concept.'
