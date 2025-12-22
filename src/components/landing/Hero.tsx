@@ -62,7 +62,7 @@ export default function Hero() {
   return (
     <motion.section
       id="home"
-      className="relative text-center !py-24 md:!py-32 min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden"
+      className="relative text-center pt-52 pb-24 md:pt-72 md:pb-32 min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

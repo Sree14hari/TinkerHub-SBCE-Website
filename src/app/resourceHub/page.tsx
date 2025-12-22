@@ -1,27 +1,24 @@
-import Header from "@/components/landing/Header"
-import Footer from "@/components/landing/Footer"
 import CollageCard from "@/components/resourceHub/Cards"
 import TiltBanner from "@/components/resourceHub/TiltBanner"
 import Link from "next/link"
 
 export default async function ResourceHub() {
 	return (
-		<div>
-			<div>
-				<div className='mx-auto max-w-6xl px-4 md:px-6 mt-6 md:mt-[25px]'>
-					<TiltBanner
-						text='RESOURCES PAGE'
-						rotate={-3}
-						skewX={-4}
-						bg='#0a0a0a'
-						color='#ffffff'
-						px={56}
-						py={16}
-						radius={2}
-						letterStagger={0.04}
-						letterPop={1.1}
-					/>
-				</div>
+		<div className="pt-32 md:pt-40 pb-10">
+			<div className='mx-auto max-w-6xl px-4 md:px-6 mb-12'>
+				<TiltBanner
+					text='RESOURCES PAGE'
+					rotate={-3}
+					skewX={-4}
+					bg='#0a0a0a'
+					color='#ffffff'
+					px={56}
+					py={16}
+					radius={2}
+					letterStagger={0.04}
+					letterPop={1.1}
+				/>
+			</div>
 				<div className='min-h-[63.4vh] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-8 px-4'>
 					<div className='w-full lg:w-auto flex justify-center'>
 						<Link href='/resourceHub/domain'>
@@ -46,6 +43,5 @@ export default async function ResourceHub() {
 					</div>
 				</div>
 			</div>
-		</div>
 	)
 }

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import UpcomingEvents from "@/components/events/UpcomingEvents"
 import { eventsData } from "@/lib/data"
 import { Button } from "../ui/button"
+import { ArrowRight } from "lucide-react"
 
 export default function ChainedEvents() {
 	return (
@@ -23,7 +24,10 @@ export default function ChainedEvents() {
 				<UpcomingEvents events={eventsData.upcoming} />
 
 				<div className='text-center mt-12'>
-					<Button>View all events</Button>
+					<Button className="group px-8 py-6 text-lg">
+						View all events
+						<ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+					</Button>
 				</div>
 			</div>
 		</section>
