@@ -85,19 +85,19 @@ export default function ConceptsPage() {
         <div className="relative flex items-center">
             {/* Robot Icon */}
             <div className="absolute -left-4 md:-left-16 -top-12 md:-top-16 w-24 h-24 md:w-32 md:h-32 pointer-events-none z-20">
-                 <Image src="/images/tinker.png" alt="Robot" fill className="object-contain" />
+                 <Image src="/bot.png" alt="Robot" fill className="object-contain" />
             </div>
 
             {/* Search Input Container */}
-            <div className="w-full bg-gray-200/80 backdrop-blur-sm rounded-full pl-16 md:pl-20 pr-4 py-3 md:py-4 flex items-center shadow-inner border border-white/50">
+            <div className="w-full bg-white/30 backdrop-blur-md rounded-full pl-16 md:pl-24 pr-6 py-4 flex items-center shadow-[inset_0px_1px_4px_rgba(0,0,0,0.05),0px_4px_20px_rgba(0,0,0,0.05)] border border-white/40 transition-all duration-300 hover:bg-white/40 hover:shadow-[inset_0px_1px_4px_rgba(0,0,0,0.05),0px_8px_30px_rgba(0,0,0,0.12)] group">
                 <input 
                     type="text" 
-                    placeholder="Search..." 
-                    className="flex-1 bg-transparent border-none outline-none text-gray-700 placeholder-gray-500 font-medium" 
+                    placeholder="Search for concepts..." 
+                    className="flex-1 bg-transparent border-none outline-none text-lg text-foreground placeholder-muted-foreground/70 font-medium tracking-wide" 
                 />
-                <Search className="w-6 h-6 text-gray-600 mr-4 cursor-pointer" />
-                <div className="border-l border-gray-400 h-6 mx-2" />
-                <Menu className="w-6 h-6 text-black cursor-pointer ml-2" />
+                <Search className="w-6 h-6 text-muted-foreground/80 mr-4 cursor-pointer transition-colors group-hover:text-primary" />
+                <div className="border-l border-muted-foreground/20 h-8 mx-2" />
+                <Menu className="w-6 h-6 text-foreground cursor-pointer ml-3 transition-transform active:scale-90" />
             </div>
         </div>
       </div>
