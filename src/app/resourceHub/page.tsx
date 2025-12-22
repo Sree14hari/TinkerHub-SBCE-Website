@@ -21,7 +21,7 @@ export default async function ResourceHub() {
 			</div>
 				<div className='min-h-[63.4vh] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-8 px-4'>
 					<div className='w-full lg:w-auto flex justify-center'>
-						<Link href='/resourceHub/domain'>
+						<Link href='/resourceHub/concepts'>
 							<CollageCard
 								title='Concepts'
 								description='The concept explains the main idea or theme behind the learning topic — what it is about and why it matters.'
