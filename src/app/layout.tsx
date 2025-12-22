@@ -1,6 +1,13 @@
-import type {Metadata} from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
   title: 'TinkerHub SBCE',
@@ -18,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;900&family=Special+Elite&family=Rock+Salt&display=swap" rel="stylesheet" />
