@@ -4,9 +4,10 @@ import Link from "next/link"
 import { resourceHubData } from "@/data/resourceHubData"
 import { notFound } from "next/navigation"
 
-export default function ToolPage({ params }: { params: { domain: string; tool: string } }) {
-	const domainData = resourceHubData.find((d) => d.slug === params.domain)
-	const toolData = domainData?.tools.find((t) => t.slug === params.tool)
+export default async function ToolPage({ params }: { params: Promise<{ domain: string; tool: string }> }) {
+	const { domain, tool } = await params
+	const domainData = resourceHubData.find((d) => d.slug === domain)
+	const toolData = domainData?.tools.find((t) => t.slug === tool)
 
 	if (!domainData || !toolData) {
 		return notFound()
@@ -30,7 +31,7 @@ export default function ToolPage({ params }: { params: { domain: string; tool: s
 			</div>
 			<div className='min-h-[63.4vh] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-8 px-4'>
 				<div className='w-full lg:w-auto flex justify-center'>
-					<Link href={`/resourceHub/${params.domain}/${params.tool}/concepts`}>
+					<Link href={`/resourceHub/${domain}/${tool}/concepts`}>
 						<CollageCard
 							title='Concepts'
 							description={`Explore core concepts and ideas in ${toolData.name}.`}
@@ -39,7 +40,7 @@ export default function ToolPage({ params }: { params: { domain: string; tool: s
 					</Link>
 				</div>
 				<div className='w-full lg:w-auto flex justify-center lg:justify-start'>
-					<Link href={`/resourceHub/${params.domain}/${params.tool}/courses`}>
+					<Link href={`/resourceHub/${domain}/${tool}/courses`}>
 						<CollageCard
 							title='Courses'
 							description={`Find structured learning materials for ${toolData.name}.`}

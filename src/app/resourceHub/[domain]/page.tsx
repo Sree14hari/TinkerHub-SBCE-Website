@@ -4,8 +4,9 @@ import Link from "next/link"
 import { resourceHubData } from "@/data/resourceHubData"
 import { notFound } from "next/navigation"
 
-export default function DomainPage({ params }: { params: { domain: string } }) {
-	const domainData = resourceHubData.find((d) => d.slug === params.domain)
+export default async function DomainPage({ params }: { params: Promise<{ domain: string }> }) {
+	const { domain } = await params
+	const domainData = resourceHubData.find((d) => d.slug === domain)
 
 	if (!domainData) {
 		return notFound()

@@ -5,6 +5,7 @@ import Image from "next/image"
 import TiltBanner from "@/components/resourceHub/TiltBanner"
 import { Search, SlidersHorizontal, Menu } from "lucide-react"
 import { motion } from "framer-motion"
+import { useParams } from "next/navigation"
 
 const concepts = [
   { id: 1, title: "CHECKOUT UI/UX", image: "/images/image.png" },
@@ -61,17 +62,17 @@ const ConceptCard = ({ title, image }: { title: string; image: string }) => (
 )
 
 
-export default function ConceptsPage({ params }: { params: { domain: string, tool: string } }) {
-  // We can use params.tool to filter concepts or display the tool name
-  // For now, we'll keep the static list but update the banner title potentially (optional)
-
+export default function ConceptsPage() {
+  const params = useParams()
+  const tool = params.tool as string
+  
   return (
     <div className="min-h-screen pt-32 pb-20 container mx-auto px-4 md:px-8">
       
       {/* Header Banner */}
       <div className="flex justify-center mb-12">
         <TiltBanner
-          text={`${params.tool.toUpperCase()} CONCEPTS`}
+          text={`${tool?.toUpperCase() || ""} CONCEPTS`}
           rotate={-2}
           bg="#000"
           color="#fff"
@@ -93,7 +94,7 @@ export default function ConceptsPage({ params }: { params: { domain: string, too
             <div className="w-full bg-white/30 backdrop-blur-md rounded-full pl-16 md:pl-24 pr-6 py-4 flex items-center shadow-[inset_0px_1px_4px_rgba(0,0,0,0.05),0px_4px_20px_rgba(0,0,0,0.05)] border border-white/40 transition-all duration-300 hover:bg-white/40 hover:shadow-[inset_0px_1px_4px_rgba(0,0,0,0.05),0px_8px_30px_rgba(0,0,0,0.12)] group">
                 <input 
                     type="text" 
-                    placeholder={`Search for ${params.tool} concepts...`}
+                    placeholder={`Search for ${tool} concepts...`}
                     className="flex-1 bg-transparent border-none outline-none text-lg text-foreground placeholder-muted-foreground/70 font-medium tracking-wide" 
                 />
                 <Search className="w-6 h-6 text-muted-foreground/80 mr-4 cursor-pointer transition-colors group-hover:text-primary" />
