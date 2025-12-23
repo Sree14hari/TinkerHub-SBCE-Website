@@ -3,6 +3,7 @@ import Hero from '@/components/landing/Hero';
 import Marquee from '@/components/landing/Marquee';
 import MissionVision from '@/components/landing/MissionVision';
 import ChainedEvents from '@/components/landing/ChainedEvents';
+import ResourceHubPreview from '@/components/landing/ResourceHubPreview';
 import Footer from '@/components/landing/Footer';
 
 const marqueeContent1 = [
@@ -53,6 +54,7 @@ export default async function Home() {
         <Hero />
         <Marquee content={marqueeContent1} className="bg-black text-white -rotate-2" />
         <MissionVision />
+        <ResourceHubPreview />
         <Marquee content={marqueeContent2} className="bg-primary text-primary-foreground rotate-2" />
         <ChainedEvents />
       </main>
