@@ -2,13 +2,20 @@ import CollageCard from "@/components/resourceHub/Cards"
 import TiltBanner from "@/components/resourceHub/TiltBanner"
 import Link from "next/link"
 import { resourceHubData } from "@/data/resourceHubData"
+import { notFound } from "next/navigation"
 
-export default async function ResourceHub() {
+export default function DomainPage({ params }: { params: { domain: string } }) {
+	const domainData = resourceHubData.find((d) => d.slug === params.domain)
+
+	if (!domainData) {
+		return notFound()
+	}
+
 	return (
-		<div className="pt-32 md:pt-40 pb-10">
+		<div className='pt-32 md:pt-40 pb-10'>
 			<div className='mx-auto max-w-6xl px-4 md:px-6 mb-12'>
 				<TiltBanner
-					text='RESOURCE HUB'
+					text={domainData.name.toUpperCase()}
 					rotate={-3}
 					skewX={-4}
 					bg='#0a0a0a'
@@ -21,12 +28,12 @@ export default async function ResourceHub() {
 				/>
 			</div>
 			<div className='grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 lg:gap-16 py-8 px-4 max-w-6xl mx-auto'>
-				{resourceHubData.map((domain, index) => (
-					<div key={domain.slug} className='flex justify-center'>
-						<Link href={`/resourceHub/${domain.slug}`}>
+				{domainData.tools.map((tool, index) => (
+					<div key={tool.slug} className='flex justify-center'>
+						<Link href={`/resourceHub/${domainData.slug}/${tool.slug}`}>
 							<CollageCard
-								title={domain.name}
-								description={domain.description}
+								title={tool.name}
+								description={tool.description || ""}
 								handDirection={index % 2 === 0 ? "left" : "right"}
 							/>
 						</Link>
